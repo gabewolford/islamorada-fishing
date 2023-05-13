@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom"
 
 export default function GuideDetailsPage({ guideData, setDetailPage }) {
     const id = useParams()
-    console.log(id)
 
     useEffect(() => {
         if (guideData) {
