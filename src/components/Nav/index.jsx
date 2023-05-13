@@ -39,6 +39,12 @@ export default function Nav() {
                     <li>
                         <Link to="/visit-islamorada/play" className="mr-2">Play</Link>
                     </li>
+                    <li>
+                        <Link to="/FAQs" className="mr-2 font-bold">FAQs</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact" className="mr-2 font-bold">Contact</Link>
+                    </li>
                 </ul>
             </nav>
         </>

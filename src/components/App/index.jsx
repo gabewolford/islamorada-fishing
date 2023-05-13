@@ -15,6 +15,8 @@ import VisitPage from '../Visit/VisitPage'
 import WWSPage from '../Visit/WWSPage'
 import StayPage from '../Visit/StayPage'
 import PlayPage from '../Visit/PlayPage'
+import FAQPage from '../FAQPage'
+import ContactPage from '../ContactPage'
 import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
 
@@ -214,17 +216,19 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/charters" element={<FishingChartersPage />} />
-        <Route path="charters/inshore-backcountry" element={<InshoreBackcountryChartersPage />} />
-        <Route path="charters/offshore" element={<OffshoreChartersPage />} />
-        <Route path="charters/eco-enviro-tours" element={<EcoEnviroToursPage />} />
-        <Route path="charters/custom" element={<CustomFishingPackagesPage />} />
-        <Route path="charters/*" element={<CustomFishingPackagesPage />} />
+        <Route path="/charters/inshore-backcountry" element={<InshoreBackcountryChartersPage />} />
+        <Route path="/charters/offshore" element={<OffshoreChartersPage />} />
+        <Route path="/charters/eco-enviro-tours" element={<EcoEnviroToursPage />} />
+        <Route path="/charters/custom" element={<CustomFishingPackagesPage />} />
+        <Route path="/charters/*" element={<CustomFishingPackagesPage />} />
         <Route path="/guides" element={<GuidesPage guidesList={guidesList}/>} />
         <Route path="/guides/:name" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} />}  />
         <Route path="/visit-islamorada" element={<VisitPage />} />
         <Route path="/visit-islamorada/world-wide-sportsman" element={<WWSPage />} />
         <Route path="/visit-islamorada/stay" element={<StayPage />} />
         <Route path="/visit-islamorada/play" element={<PlayPage />} />
+        <Route path="/FAQs" element={<FAQPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     </>
