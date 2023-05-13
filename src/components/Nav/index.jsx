@@ -19,9 +19,6 @@ export default function Nav() {
                         <Link to="charters/offshore" className="mr-2">Offshore Charters</Link>
                     </li>
                     <li>
-                        <Link to="charters/sunset" className="mr-2">Sunset Fishing Charters</Link>
-                    </li>
-                    <li>
                         <Link to="charters/eco-enviro-tours" className="mr-2">Eco / Enviro Tours</Link>
                     </li>
                     <li>

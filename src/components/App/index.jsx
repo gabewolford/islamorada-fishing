@@ -6,7 +6,6 @@ import HomePage from '../HomePage'
 import FishingChartersPage from '../Charters/FishingChartersPage'
 import InshoreBackcountryChartersPage from '../Charters/InshoreBackcountryChartersPage'
 import OffshoreChartersPage from '../Charters/OffshoreChartersPage'
-import SunsetChartersPage from '../Charters/SunsetChartersPage'
 import EcoEnviroToursPage from '../Charters/EcoEnviroToursPage'
 import CustomFishingPackagesPage from '../Charters/CustomFishingPackagesPage'
 import GuidesPage from '../Guides/GuidesPage'
@@ -213,7 +212,6 @@ function App() {
         <Route path="/charters" element={<FishingChartersPage />} />
         <Route path="charters/inshore-backcountry" element={<InshoreBackcountryChartersPage />} />
         <Route path="charters/offshore" element={<OffshoreChartersPage />} />
-        <Route path="charters/sunset" element={<SunsetChartersPage />} />
         <Route path="charters/eco-enviro-tours" element={<EcoEnviroToursPage />} />
         <Route path="charters/custom" element={<CustomFishingPackagesPage />} />
         <Route path="charters/*" element={<CustomFishingPackagesPage />} />
