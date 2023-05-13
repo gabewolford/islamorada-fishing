@@ -216,6 +216,7 @@ function App() {
         <Route path="charters/sunset" element={<SunsetChartersPage />} />
         <Route path="charters/eco-enviro-tours" element={<EcoEnviroToursPage />} />
         <Route path="charters/custom" element={<CustomFishingPackagesPage />} />
+        <Route path="charters/*" element={<CustomFishingPackagesPage />} />
         <Route path="/guides" element={<GuidesPage guidesList={guidesList}/>} />
         <Route path="/guides/:name" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} />}  />
         <Route path="/*" element={<NotFoundPage />} />
