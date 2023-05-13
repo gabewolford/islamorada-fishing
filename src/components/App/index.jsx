@@ -3,22 +3,17 @@ import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Nav from '../Nav'
 import HomePage from '../HomePage'
-import FishingChartersPage from '../Charters/FishingChartersPage'
+import ChartersPage from '../Charters/ChartersPage'
 import InshoreBackcountryChartersPage from '../Charters/InshoreBackcountryChartersPage'
 import OffshoreChartersPage from '../Charters/OffshoreChartersPage'
 import EcoEnviroToursPage from '../Charters/EcoEnviroToursPage'
-import CustomFishingPackagesPage from '../Charters/CustomFishingPackagesPage'
 import GuidesPage from '../Guides/GuidesPage'
 import GuideCard from '../Guides/GuideCard'
 import GuideDetailsPage from '../Guides/GuideDetailsPage'
-import VisitPage from '../Visit/VisitPage'
-import WWSPage from '../Visit/WWSPage'
-import StayPage from '../Visit/StayPage'
-import PlayPage from '../Visit/PlayPage'
+import VisitPage from '../VisitPage'
 import FAQPage from '../FAQPage'
 import ContactPage from '../ContactPage'
 import NotFoundPage from '../NotFoundPage'
-import Footer from '../Footer'
 
 
 function App() {
@@ -215,19 +210,14 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/charters" element={<FishingChartersPage />} />
+        <Route path="/charters" element={<ChartersPage />} />
         <Route path="/charters/inshore-backcountry" element={<InshoreBackcountryChartersPage />} />
         <Route path="/charters/offshore" element={<OffshoreChartersPage />} />
         <Route path="/charters/eco-enviro-tours" element={<EcoEnviroToursPage />} />
-        <Route path="/charters/custom" element={<CustomFishingPackagesPage />} />
-        <Route path="/charters/*" element={<CustomFishingPackagesPage />} />
         <Route path="/guides" element={<GuidesPage guidesList={guidesList}/>} />
         <Route path="/guides/:name" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} />}  />
         <Route path="/visit-islamorada" element={<VisitPage />} />
-        <Route path="/visit-islamorada/world-wide-sportsman" element={<WWSPage />} />
-        <Route path="/visit-islamorada/stay" element={<StayPage />} />
-        <Route path="/visit-islamorada/play" element={<PlayPage />} />
-        <Route path="/FAQs" element={<FAQPage />} />
+        <Route path="/frequently-asked-questions" element={<FAQPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
