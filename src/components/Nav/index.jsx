@@ -1,8 +1,36 @@
+import { Link } from "react-router-dom";
+
 export default function Nav() {
     return (
         <>
             <nav>
-                <h1 className='text-3xl text-blue-500'>Islamorda Fishing Guides Nav</h1>
+                <h1 className='text-3xl text-blue-500'>Islamorda Fishing Guides Logo</h1>
+                <ul>
+                    <li>
+                        <Link to="/" className="mr-2">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/fishing-charters" className="mr-2">Fishing Charters</Link>
+                    </li>
+                    <li>
+                        <Link to="/inshore-backcountry-charters" className="mr-2">Inshore Backcountry Charters</Link>
+                    </li>
+                    <li>
+                        <Link to="/offshore-charters" className="mr-2">Offshore Charters</Link>
+                    </li>
+                    <li>
+                        <Link to="/night-fishing-charters" className="mr-2">Night Fishing Charters</Link>
+                    </li>
+                    <li>
+                        <Link to="/eco-enviro-tours" className="mr-2">Eco / Enviro Tours</Link>
+                    </li>
+                    <li>
+                        <Link to="/custom-fishing-packages" className="mr-2">Custom Fishing Packages</Link>
+                    </li>
+                    <li>
+                        <Link to="/our-guides" className="mr-2">Our Guides</Link>
+                    </li>
+                </ul>
             </nav>
         </>
     )

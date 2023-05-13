@@ -8,6 +8,8 @@ import OffshoreChartersPage from '../OffshoreChartersPage'
 import NightFishingChartersPage from '../NightFishingChartersPage'
 import EcoEnviroToursPage from '../EcoEnviroToursPage'
 import CustomFishingPackagesPage from '../CustomFishingPackagesPage'
+import OurGuidesPage from '../OurGuidesPage'
+import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
 
 
@@ -26,6 +28,8 @@ function App() {
         <Route path="/night-fishing-charters" element={<NightFishingChartersPage />} />
         <Route path="/eco-enviro-tours" element={<EcoEnviroToursPage />} />
         <Route path="/custom-fishing-packages" element={<CustomFishingPackagesPage />} />
+        <Route path="/our-guides" element={<OurGuidesPage />} />
+        <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     </>
   )
