@@ -11,6 +11,10 @@ import CustomFishingPackagesPage from '../Charters/CustomFishingPackagesPage'
 import GuidesPage from '../Guides/GuidesPage'
 import GuideCard from '../Guides/GuideCard'
 import GuideDetailsPage from '../Guides/GuideDetailsPage'
+import VisitPage from '../Visit/VisitPage'
+import WWSPage from '../Visit/WWSPage'
+import StayPage from '../Visit/StayPage'
+import PlayPage from '../Visit/PlayPage'
 import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
 
@@ -217,6 +221,10 @@ function App() {
         <Route path="charters/*" element={<CustomFishingPackagesPage />} />
         <Route path="/guides" element={<GuidesPage guidesList={guidesList}/>} />
         <Route path="/guides/:name" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} />}  />
+        <Route path="/visit-islamorada" element={<VisitPage />} />
+        <Route path="/visit-islamorada/world-wide-sportsman" element={<WWSPage />} />
+        <Route path="/visit-islamorada/stay" element={<StayPage />} />
+        <Route path="/visit-islamorada/play" element={<PlayPage />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     </>

@@ -7,10 +7,10 @@ export default function Nav() {
                 <h1 className='text-3xl text-blue-500'>Islamorda Fishing Guides Logo</h1>
                 <ul>
                     <li>
-                        <Link to="/" className="mr-2">Home</Link>
+                        <Link to="/" className="mr-2 font-bold">Home</Link>
                     </li>
                     <li>
-                        <Link to="/charters" className="mr-2">Fishing Charters</Link>
+                        <Link to="/charters" className="mr-2 font-bold">Fishing Charters</Link>
                     </li>
                     <li>
                         <Link to="charters/inshore-backcountry" className="mr-2">Inshore Backcountry Charters</Link>
@@ -25,7 +25,19 @@ export default function Nav() {
                         <Link to="charters/custom" className="mr-2">Custom Fishing Packages</Link>
                     </li>
                     <li>
-                        <Link to="/guides" className="mr-2">Our Guides</Link>
+                        <Link to="/guides" className="mr-2 font-bold">Our Guides</Link>
+                    </li>
+                    <li>
+                        <Link to="/visit-islamorada" className="mr-2 font-bold">Visit Islamorada</Link>
+                    </li>
+                    <li>
+                        <Link to="/visit-islamorada/world-wide-sportsman" className="mr-2">World Wide Sportsman</Link>
+                    </li>
+                    <li>
+                        <Link to="/visit-islamorada/stay" className="mr-2">Stay</Link>
+                    </li>
+                    <li>
+                        <Link to="/visit-islamorada/play" className="mr-2">Play</Link>
                     </li>
                 </ul>
             </nav>
