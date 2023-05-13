@@ -2,7 +2,10 @@ export default function GuidesPage({ guidesList }) {
 
     return (
         <>
-            <h1 className='text-xl text-blue-500'>{guidesList}</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                {guidesList}
+            </div>
+            
         </>
     )
 }
