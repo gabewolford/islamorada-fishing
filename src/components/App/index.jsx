@@ -207,7 +207,7 @@ function App() {
   return (
     <>
       <Nav />
-
+      
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/charters" element={<ChartersPage />} />
