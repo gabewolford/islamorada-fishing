@@ -126,7 +126,7 @@ export default function HomePage() {
                                 </div>
                             </div>
                         </div>
-                        <Link to="#" className="text-center text-cyan-420 font-medium">View All</Link>
+                        <Link to="/partners" className="text-center text-cyan-420 font-medium">View All</Link>
                     </div>
 
 

@@ -28,7 +28,7 @@ export default function Footer() {
                         <p><Link className="inline-flex gap-x-2 text-white" to="/guides">Guides</Link></p>
                         <p><Link className="inline-flex gap-x-2 text-white" to="/visit-islamorada">Explore Islamorada</Link></p>
                         <p><Link className="inline-flex gap-x-2 text-white" to="/frequently-asked-questions">FAQs</Link></p>
-                        <p><Link className="inline-flex gap-x-2 text-white" to="#">Our Partners</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white" to="/partners">Our Partners</Link></p>
                     </div>
 
 

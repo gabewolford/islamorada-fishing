@@ -14,6 +14,7 @@ import GuideDetailsPage from '../Guides/GuideDetailsPage'
 import VisitPage from '../VisitPage'
 import FAQPage from '../FAQPage'
 import ContactPage from '../ContactPage'
+import PartnersPage from '../PartnersPage'
 import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
 
@@ -222,6 +223,7 @@ function App() {
         <Route path="/visit-islamorada" element={<VisitPage />} />
         <Route path="/frequently-asked-questions" element={<FAQPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/partners" element={<PartnersPage />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
     
