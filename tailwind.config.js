@@ -10,7 +10,12 @@ export default {
       colors: {
         cyan: {
           420: '#1989AD',
+          69: '#113C5D',
+        },
+        muted: {
+          420: '#999BAF',
         }
+
       }
     },
   },
