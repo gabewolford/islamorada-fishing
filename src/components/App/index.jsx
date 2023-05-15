@@ -1,4 +1,5 @@
 import './styles.css'
+import preline from 'preline'
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Nav from '../Nav'
@@ -14,6 +15,7 @@ import VisitPage from '../VisitPage'
 import FAQPage from '../FAQPage'
 import ContactPage from '../ContactPage'
 import NotFoundPage from '../NotFoundPage'
+import Footer from '../Footer'
 
 
 function App() {
@@ -207,6 +209,7 @@ function App() {
   return (
     <>
       <Nav />
+      <Footer />
       
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -221,6 +224,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/*" element={<NotFoundPage />} />
       </Routes>
+    
     </>
   )
 }
