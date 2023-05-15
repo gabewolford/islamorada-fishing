@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import heroImage from '../../../assets/hero-image-home.png'
 import backcountryImage from '../../../assets/backcountry-image-home.png'
 import offshoreImage from '../../../assets/offshore-image-home.png'
 import ecotoursImage from '../../../assets/ecotours-image-home.png'
