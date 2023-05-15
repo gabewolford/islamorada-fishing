@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                     
                     <div className="col-span-full lg:col-span-1 lg:block">
-                        <Link className="flex-none text-xl text-muted-420 font-semibold " to="#" aria-label="Brand">logo</Link>
+                        <Link className="flex-none text-xl text-muted-420 font-semibold " to="/" aria-label="Brand">logo</Link>
                         <p className="mt-3 text-xs text-muted-420">© 2023 IslamoradaFishingGuidesandCharters</p>
                         <p className="mt-3 text-xs text-muted-420">All rights reserved.</p>
                     </div>
@@ -36,8 +36,8 @@ export default function Footer() {
                         <p><Link className="inline-flex gap-x-2 text-white" to="/contact">Contact Us</Link></p>
                         <p className="inline-flex gap-x-2 text-white">Call us today <span className="text-white font-bold">305-394-7484</span></p>
                         <p className="inline-flex gap-x-2 text-white"> 
-                            <a className="mr-2"><span><img src={facebookLogo}/></span></a>
-                            <a><span><img src={instagramLogo}/></span></a>
+                            <a href="https://www.facebook.com/islamoradafishingguidesandcharters" className="mr-2"><span><img src={facebookLogo}/></span></a>
+                            <a href="https://www.instagram.com/islamoradafishingguides/"><span><img src={instagramLogo}/></span></a>
                         </p>
                     </div>
 
