@@ -6,9 +6,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #073050;
 }
 
 body {
     position: relative;
     min-height: 100vh;
+    padding-bottom: 35rem;
 }

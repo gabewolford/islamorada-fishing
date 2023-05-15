@@ -5,7 +5,7 @@ import instagramLogo from '../../assets/instagram.png'
 export default function Footer() {
     return (
         <>
-            <footer className="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-cyan-69 absolute bottom-0">
+            <footer className="w-full p-10 px-4 sm:px-6 lg:px-8 mx-auto bg-cyan-69 absolute bottom-0">
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                     
