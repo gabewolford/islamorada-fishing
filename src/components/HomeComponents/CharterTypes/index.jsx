@@ -6,7 +6,7 @@ import ecotoursImage from '../../../assets/ecotours-image-home.png'
 export default function CharterTypes() {
     return (
         <>
-            <div className="mx-6 mb-16">
+            <div className="md:mx-6 lg:mx-20 mb-16">
                     <h1 className="text-2xl mb-6">Types of charters</h1>
                     <div className="flex flex-col md:flex-row md:grid md:grid-cols-3 md:flex-wrap md:gap-6 items-center self-stretch">
                         <div className="flex items-center md:flex-col self-stretch mb-6 gap-4">

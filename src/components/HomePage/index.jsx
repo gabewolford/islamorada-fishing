@@ -7,7 +7,7 @@ import PartnersSection from "../HomeComponents/PartnersSection"
 export default function HomePage() {
     return (
         <>
-            <div className="mx-auto pt-14">
+            <div className="mx-auto max-w-7xl pt-14">
                 <HeroCard />
                 <CharterTypes />
                 <PhotoLeftInfoCard />

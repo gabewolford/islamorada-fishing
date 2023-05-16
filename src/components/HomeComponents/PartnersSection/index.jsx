@@ -10,7 +10,7 @@ import keysfishingguidesImage from '../../../assets/keysfishingguidesassoc.png'
 export default function PartnersSection() {
     return (
         <>
-            <div className="flex flex-col items-center mx-6 gap-6">
+            <div className="flex flex-col items-center md:mx-6 lg:mx-20 gap-6">
                 <h3 className="text-2xl mb-6">Featured partners</h3>
                 <div className="flex flex-row justify-center gap-12">
                     <div className="w-1/3 md:w-1/6 lg:w-{1/7}">
