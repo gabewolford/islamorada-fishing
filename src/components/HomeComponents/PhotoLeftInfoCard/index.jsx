@@ -4,7 +4,7 @@ import bookdirectlyImage from '../../../assets/book-directly-image-home.png'
 export default function PhotoLeftInfoCard() {
     return (
         <>
-            <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1 md:mx-6 lg:mx-20 mb-16">
+            <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1 mx-6 lg:mx-20 mb-16">
                 <div className="flex">
                     <img src={bookdirectlyImage} alt="Hero Image" />
                 </div>

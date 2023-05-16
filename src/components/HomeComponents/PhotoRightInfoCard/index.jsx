@@ -4,7 +4,7 @@ import wwsImage from '../../../assets/wws-image-home.png'
 export default function PhotoRightInfoCard() {
     return (
         <>
-            <div className="flex flex-col-reverse md:flex-row items-center gap-6 lg:gap-28 order-1 md:mx-6 lg:mx-20 mb-16">
+            <div className="flex flex-col-reverse md:flex-row items-center gap-6 lg:gap-28 order-1 mx-6 lg:mx-20 mb-16">
                 <div className="flex order-1">
                     <img src={wwsImage} alt="Hero Image" />
                 </div>
