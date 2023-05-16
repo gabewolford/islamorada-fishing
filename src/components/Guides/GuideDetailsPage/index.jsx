@@ -28,10 +28,12 @@ export default function GuideDetailsPage({ guideData, setDetailPage }) {
         <>
             <div className="mx-auto max-w-7xl pt-24">
                 <div className="mx-6 lg:mx-20 mb-16">
-                    <h1 className="text-3xl font-medium mb-6">Guide Details</h1>
+                    <div className="flex flex-col items-start gap-3 mb-8 md:mb-16">
+                        <p className="text-sm"><Link to="/" className="hover:text-cyan-hover">Home</Link> / <Link to="/guides" className="hover:text-cyan-hover">Guides</Link> / {guideData.name}</p>
+                        <h1 className="text-3xl lg:text-5xl font-medium">Guide Details</h1>
+                    </div>
                     <div>
                         {page}
-                        <Link to="/guides" className="text-cyan-420 hover:text-cyan-hover text-cyan-420 hover:text-cyan-hover transition duration-100 ease-in-out font-medium">← Back to guides</Link>
                     </div>
                 </div>
             </div>
