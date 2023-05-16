@@ -22,19 +22,19 @@ export default function Footer() {
                         <Link className="flex-none text-xl text-muted-420 font-semibold " to="/" aria-label="Brand">logo</Link>
                     </div>
                     <div className="grid space-y-3 text-sm">
-                        <p><Link className="inline-flex gap-x-2 text-white" to="/charters">Fishing Charters</Link></p>
-                        <p><Link className="inline-flex gap-x-2 text-white" to="/charters/inshore-backcountry">Backcountry & Inshore</Link></p>
-                        <p><Link className="inline-flex gap-x-2 text-white" to="/charters/offshore">Reef & Offshore</Link></p>
-                        <p><Link className="inline-flex gap-x-2 text-white" to="/charters/eco-enviro-tours">Eco & Enviro Tours</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/charters">Fishing Charters</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/charters/inshore-backcountry">Backcountry & Inshore</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/charters/offshore">Reef & Offshore</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/charters/eco-enviro-tours">Eco & Enviro Tours</Link></p>
                     </div>
                     <div className="grid space-y-3 text-sm">
-                        <p><Link className="inline-flex gap-x-2 text-white" to="/guides">Guides</Link></p>
-                        <p><Link className="inline-flex gap-x-2 text-white" to="/visit-islamorada">Explore Islamorada</Link></p>
-                        <p><Link className="inline-flex gap-x-2 text-white" to="/frequently-asked-questions">FAQs</Link></p>
-                        <p><Link className="inline-flex gap-x-2 text-white" to="/partners">Our Partners</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/guides">Guides</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/visit-islamorada">Explore Islamorada</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/frequently-asked-questions">FAQs</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/partners">Our Partners</Link></p>
                     </div>
                     <div className="col-span-full lg:col-span-1 grid space-y-3 text-sm">
-                        <p><Link className="inline-flex gap-x-2 text-white" to="/contact">Contact Us</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/contact">Contact Us</Link></p>
                         <p className="inline-flex gap-x-2 text-white">Call us today <span className="text-white font-bold">305-394-7484</span></p>
                         <p className="inline-flex gap-x-2 text-white"> 
                             <a href="https://www.facebook.com/islamoradafishingguidesandcharters" className="mr-2"><span><img src={facebookLogo}/></span></a>
