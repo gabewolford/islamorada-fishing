@@ -11,5 +11,17 @@
 
 body {
     position: relative;
-    padding-bottom: 650px;
+    min-height: 100vh;
+}
+
+@media only screen and (min-width: 411px) {
+    body {
+        padding-bottom: 800px;
+    }
+}
+
+@media only screen and (min-width: 1028px) {
+    body {
+        padding-bottom: 650px;
+    }
 }

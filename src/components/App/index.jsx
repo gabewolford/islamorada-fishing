@@ -208,23 +208,24 @@ function App() {
 
   return (
     <>
-            <Nav />
-            <Footer />
-            
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/charters" element={<ChartersPage />} />
-                <Route path="/charters/inshore-backcountry" element={<InshoreBackcountryChartersPage />} />
-                <Route path="/charters/offshore" element={<OffshoreChartersPage />} />
-                <Route path="/charters/eco-enviro-tours" element={<EcoEnviroToursPage />} />
-                <Route path="/guides" element={<GuidesPage guidesList={guidesList}/>} />
-                <Route path="/guides/:name" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} />}  />
-                <Route path="/visit-islamorada" element={<VisitPage />} />
-                <Route path="/frequently-asked-questions" element={<FAQPage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                <Route path="/partners" element={<PartnersPage />} />
-                <Route path="/*" element={<NotFoundPage />} />
-            </Routes>
+
+        <Nav />
+        <Footer />
+        
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/charters" element={<ChartersPage />} />
+            <Route path="/charters/inshore-backcountry" element={<InshoreBackcountryChartersPage />} />
+            <Route path="/charters/offshore" element={<OffshoreChartersPage />} />
+            <Route path="/charters/eco-enviro-tours" element={<EcoEnviroToursPage />} />
+            <Route path="/guides" element={<GuidesPage guidesList={guidesList}/>} />
+            <Route path="/guides/:name" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} />}  />
+            <Route path="/visit-islamorada" element={<VisitPage />} />
+            <Route path="/frequently-asked-questions" element={<FAQPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/partners" element={<PartnersPage />} />
+            <Route path="/*" element={<NotFoundPage />} />
+        </Routes>
     </>
   )
 }
