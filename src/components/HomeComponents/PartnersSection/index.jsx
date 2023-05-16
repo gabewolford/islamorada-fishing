@@ -10,54 +10,34 @@ import keysfishingguidesImage from '../../../assets/keysfishingguidesassoc.png'
 export default function PartnersSection() {
     return (
         <>
-            <div class="flex flex-col bg-white m-auto p-auto">
-                <h4 className="text-2xl text-center leading-7 mb-6 ">Our partners</h4>
-                <div class="flex overflow-x-scroll mx-6 hide-scroll-bar">
-                    <div class="flex flex-nowrap gap-6 pb-6">
-                        <div class="inline-block px-3">
-                            <div class="w-16 h-16 overflow-hidden">
-                                <img src={bassproImage} alt="Bass Pro Shops" />
-                            </div>
-                        </div>
-                        
-                        <div class="inline-block px-3">
-                            <div class="w-16 h-16 overflow-hidden">
-                                <img src={grassyflatsImage} alt="Grassy Flats" />
-                            </div>
-                        </div>
-                        
-                        <div class="inline-block px-3">
-                            <div class="w-16 h-16 overflow-hidden">
-                                <img src={amaracayImage} alt="Amara Cay Resort" />
-                            </div>
-                        </div>
-
-                        <div class="inline-block px-3">
-                            <div class="w-16 h-16 overflow-hidden">
-                                <img src={tarpontrustImage} alt="Bonefish & Tarpon Trust" />
-                            </div>
-                        </div>
-
-                        <div class="inline-block px-3">
-                            <div class="w-16 h-16 overflow-hidden">
-                                <img src={evergladescoalitionImage} alt="Everglades Coalition" />
-                            </div>
-                        </div>
-
-                        <div class="inline-block px-3">
-                            <div class="w-16 h-16 overflow-hidden">
-                                <img src={charterboatassocImage} alt="Islamorada Charter Boat Association" />
-                            </div>
-                        </div>
-
-                        <div class="inline-block px-3">
-                            <div class="w-16 h-16 overflow-hidden">
-                                <img src={keysfishingguidesImage} alt="Florida Keys Fishing Guides Association" />
-                            </div>
-                        </div>
+            <div className="flex flex-col items-center mx-6 gap-6">
+                <h3 className="text-2xl mb-6">Featured partners</h3>
+                <div className="flex flex-row justify-center gap-12">
+                    <div className="w-1/3 md:w-1/6 lg:w-{1/7}">
+                        <img src={bassproImage} alt="Bass Pro Shops" />
+                    </div>
+                    <div className="w-1/3 md:w-1/6 lg:w-{1/7}">
+                        <img src={grassyflatsImage} alt="Grassy Flats" />
+                    </div>
+                    <div className="w-1/3 md:w-1/6 lg:w-{1/7}">
+                        <img src={amaracayImage} alt="Amara Cay Resort" />
+                    </div>
+                    <div className="hidden md:inline-block md:w-1/6 lg:w-{1/7}">
+                        <img src={tarpontrustImage} alt="Bonefish & Tarpon Trust" />
+                    </div>
+                    <div className="hidden md:inline-block md:w-1/6 lg:w-{1/7}">
+                        <img src={evergladescoalitionImage} alt="Everglades Coalition" />
+                    </div>
+                    <div className="hidden lg:inline-block md:w-1/6 lg:w-{1/7}">
+                        <img src={charterboatassocImage} alt="Islamorada Charter Boat Association" />
+                    </div>
+                    <div className="hidden lg:inline-block md:w-1/6 lg:w-{1/7}">
+                        <img src={keysfishingguidesImage} alt="Florida Keys Fishing Guides Association" />
                     </div>
                 </div>
-                <Link to="/partners" className="text-center text-cyan-420 font-medium">View All</Link>
+                <div>
+                    <Link to="/parters" className="text-cyan-420 text-base font-medium">View All</Link>
+                </div>
             </div>
         </>
     )
