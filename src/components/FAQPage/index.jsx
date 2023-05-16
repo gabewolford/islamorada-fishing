@@ -1,9 +1,16 @@
+import Header from "../FAQComponents/Header"
+
 export default function FAQPage() {
+
     return (
         <>
-            <div className="absolute top-36 mx-20">
-                <h1 className="text-xl text-blue-500">FAQ Page</h1>
+            <div className="mx-auto max-w-7xl pt-24">
+                <div className="mx-6 lg:mx-20 mb-0 md:mb-8">
+                    <Header />
+                </div>
             </div>
+            
+    
         </>
-    )
+    )      
 }
