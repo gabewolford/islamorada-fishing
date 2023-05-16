@@ -1,4 +1,5 @@
 import './styles.css'
+import preline from 'preline'
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Nav from '../Nav'
@@ -208,7 +209,6 @@ function App() {
 
   return (
     <>
-
         <Nav />
         <Footer />
         

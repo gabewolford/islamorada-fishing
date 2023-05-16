@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-@media only screen and (min-width: 411px) {
+@media only screen and (min-width: 300px) {
     body {
         padding-bottom: 800px;
     }
