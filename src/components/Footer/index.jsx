@@ -11,7 +11,7 @@ export default function Footer() {
                     <div className="relative w-full">
                         <img className='h-[350px] w-full' src={waterImage} alt="Contact Us" />
                     </div>
-                    <div className="absolute px-6 flex flex-col text-center">
+                    <div className="absolute px-6 lg:px-44 flex flex-col text-center">
                         <h4 className="text-2xl md:text-3xl text-white font-medium mb-4">Plan your custom fishing charter with our help.</h4>
                         <h6 className="text-base md:text-lg text-white mb-4">Not sure which charter or guide is right for you? Have questions? Talk with our experts who will help you plan and book your perfect Florida Keys fishing trip today!</h6>
                         <Link to="/contact" className="text-cyan-420 font-medium bg-white hover:bg-cyan-hover hover:text-white transition duration-300 ease-in-out rounded-3xl px-5 py-3.5 block w-fit mx-auto">Contact Us</Link>
