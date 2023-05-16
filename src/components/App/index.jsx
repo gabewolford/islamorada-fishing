@@ -17,6 +17,7 @@ import ContactPage from '../ContactPage'
 import PartnersPage from '../PartnersPage'
 import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
+import ScrollToTop from '../ScrollToTop'
 
 
 function App() {
@@ -209,6 +210,7 @@ function App() {
 
   return (
     <>
+        <ScrollToTop />
         <Nav />
         <Footer />
         
