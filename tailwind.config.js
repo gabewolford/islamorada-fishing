@@ -12,6 +12,7 @@ export default {
           420: '#1989AD',
           69: '#113C5D',
           666: '#073050',
+          'hover': '#20ADDA'
         },
         muted: {
           420: '#999BAF',
