@@ -3,7 +3,7 @@ import backcountryImage from '../../../assets/backcountry-image-home.png'
 import offshoreImage from '../../../assets/offshore-image-home.png'
 import ecotoursImage from '../../../assets/ecotours-image-home.png'
 
-export default function ChartersPage() {
+export default function AllChartersPage() {
 
     return (
         <>

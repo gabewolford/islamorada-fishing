@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Nav from '../Nav'
 import HomePage from '../HomePage'
-import ChartersPage from '../Charters/ChartersPage'
+import AllChartersPage from '../Charters/AllChartersPage'
 import InshoreBackcountryChartersPage from '../Charters/InshoreBackcountryChartersPage'
 import OffshoreChartersPage from '../Charters/OffshoreChartersPage'
 import EcoEnviroToursPage from '../Charters/EcoEnviroToursPage'
@@ -214,7 +214,7 @@ function App() {
         
         <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/charters" element={<ChartersPage />} />
+            <Route path="/charters" element={<AllChartersPage />} />
             <Route path="/charters/inshore-backcountry" element={<InshoreBackcountryChartersPage />} />
             <Route path="/charters/offshore" element={<OffshoreChartersPage />} />
             <Route path="/charters/eco-enviro-tours" element={<EcoEnviroToursPage />} />
