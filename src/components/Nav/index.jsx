@@ -32,21 +32,21 @@ export default function NavBar() {
 
                   <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.5ms] sm:duration-[200ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-50 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5">
                     
-                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-cyan-420" to="/charters">
+                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" to="/charters">
                       All Charters
                     </Link>
 
-                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-cyan-420" to="/charters/inshore-backcountry">
+                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" to="/charters/inshore-backcountry">
                       Backcountry & Inshore
                     </Link>
 
                     <Link 
-                      className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-cyan-420" 
+                      className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" 
                       to="/charters/offshore">
                       Reef & Offshore
                     </Link>
                     
-                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-cyan-420" to="/charters/eco-enviro-tours">
+                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" to="/charters/eco-enviro-tours">
                       Eco & Enviro Tours
                     </Link>
 
