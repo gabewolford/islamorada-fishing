@@ -18,6 +18,8 @@ export default function InshoreBackcountryChartersPage() {
                     <PhotoRightCard4 />
                 </div>
             </div>
+            
+    
         </>
     )      
 }

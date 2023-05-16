@@ -5,7 +5,7 @@ export default function PhotoLeftCard1() {
     return (
         <>
             <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1 mb-16">
-                <img className="md:w-1/2" src={tarponImage} alt="Backcountry Image" />
+                <img className="md:w-1/2" src={tarponImage} alt="Tarpon Image" />
                 <div className="flex flex-col items-start lg:mr-20">
                     <h4 className="text-2xl md:text-3xl font-medium leading-7 mb-4 ">Tarpon</h4>
                     <p className="text-sm md:text-base mb-2">Also known as the Silver King, the Tarpon is known to jump and put on a memorable show. These fish have an impressive fight that will challenge any angler.</p>
