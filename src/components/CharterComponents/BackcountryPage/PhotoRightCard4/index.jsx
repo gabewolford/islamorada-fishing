@@ -13,7 +13,7 @@ export default function PhotoRightCard4() {
                     <p className="text-sm md:text-base mb-4">This is a 4-hour trip, departing from World Wide Sportsman at 4:30 PM.</p>
                     <p className="text-sm md:text-base font-bold mb-4">Availability: March through August</p>
                     <p className="text-xs mb-6">Rates vary depending on the boat and number of people.</p>
-                    <Link to="/charters/contact" className="text-white font-medium bg-cyan-420 hover:bg-cyan-hover transition duration-300 ease-in-out rounded-3xl px-5 py-3.5 w-fit">Book A Charter</Link>
+                    <Link to="/contact" className="text-white font-medium bg-cyan-420 hover:bg-cyan-hover transition duration-300 ease-in-out rounded-3xl px-5 py-3.5 w-fit">Book A Charter</Link>
                 </div>
             </div>
         </>

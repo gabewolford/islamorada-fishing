@@ -13,7 +13,7 @@ export default function PhotoRightCard2() {
                     <p className="text-sm md:text-base mb-4">In Islamorada, we are known to have many Dolphin tournaments. If you are interested in entering one, let us know and we can help suggest a few.</p>
                     <p className="text-sm md:text-base font-bold mb-4">Availability: All year</p>
                     <p className="text-xs mb-6">Rates vary depending on the boat and number of people.</p>
-                    <Link to="/charters/contact" className="text-white font-medium bg-cyan-420 hover:bg-cyan-hover transition duration-300 ease-in-out rounded-3xl px-5 py-3.5 w-fit">Book A Charter</Link>
+                    <Link to="/contact" className="text-white font-medium bg-cyan-420 hover:bg-cyan-hover transition duration-300 ease-in-out rounded-3xl px-5 py-3.5 w-fit">Book A Charter</Link>
                 </div>
             </div>
         </>
