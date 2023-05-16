@@ -18,8 +18,8 @@ export default function GuideCard({ guideData, setDetailPage }) {
                 to={`/guides/${guideData.slug}`}
                 onClick={() => setDetailPage(guideData)}
             >
-                <div className="border-2 border-blue-500 w-fit mb-4">
-                    <h3 className="text-xl text-blue-500">Captain {guideData.name}</h3>
+                <div className="border-2 border-cyan-420 w-fit mb-4">
+                    <h3 className="text-xl">Captain {guideData.name}</h3>
                     <div className="relative">
                         <img src={guideData.pic} alt={guideData.name} />
                         {backcountryBadge}

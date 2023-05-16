@@ -17,8 +17,7 @@ export default function GuideDetailsPage({ guideData, setDetailPage }) {
     if (guideData) {
         page = 
         <div>
-            <h1 className='text-xl text-blue-500'>Guide Details</h1>
-            <h1 className='text-xl'>Capt. {guideData.name}</h1>
+            <h1 className='text-2xl'>Capt. {guideData.name}</h1>
             <img src={guideData.pic} />
             <p>Bio: {guideData.bio}</p>
         </div>
@@ -27,8 +26,15 @@ export default function GuideDetailsPage({ guideData, setDetailPage }) {
 
     return (
         <>
-            {page}
-            <Link to="/guides" className="border">Back to guides</Link>
+            <div className="mx-auto max-w-7xl pt-24">
+                <div className="mx-6 lg:mx-20 mb-16">
+                    <h1 className="text-3xl font-medium mb-6">Guide Details</h1>
+                    <div>
+                        {page}
+                        <Link to="/guides" className="text-cyan-420 hover:text-cyan-hover text-cyan-420 hover:text-cyan-hover transition duration-100 ease-in-out font-medium">← Back to guides</Link>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
