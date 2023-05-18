@@ -36,7 +36,7 @@ export default function PartnersSection() {
                     </div>
                 </div>
                 <div>
-                    <Link to="/parters" className="text-cyan-420 hover:text-cyan-hover transition duration-100 ease-in-out text-base font-medium">View All</Link>
+                    <Link to="/partners" className="text-cyan-420 hover:text-cyan-hover transition duration-100 ease-in-out text-base font-medium">View All</Link>
                 </div>
             </div>
         </>
