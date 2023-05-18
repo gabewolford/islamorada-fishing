@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { useParams } from "react-router-dom"
 
 export default function GuideDetailsPage({ guideData, setDetailPage }) {
-    const id = useParams()
+    const { id } = useParams()
 
     useEffect(() => {
         if (guideData) {
@@ -14,7 +14,9 @@ export default function GuideDetailsPage({ guideData, setDetailPage }) {
     }, [])
 
     let page = <p>Loading details...</p>
+    let breadcrumbs
     if (guideData) {
+        breadcrumbs = guideData.name
         page = 
         <div>
             <h1 className='text-2xl'>Capt. {guideData.name}</h1>
@@ -29,7 +31,7 @@ export default function GuideDetailsPage({ guideData, setDetailPage }) {
             <div className="mx-auto max-w-7xl pt-24">
                 <div className="mx-6 lg:mx-20 mb-16">
                     <div className="flex flex-col items-start gap-3 mb-8 md:mb-16">
-                        <p className="text-sm"><Link to="/" className="hover:text-cyan-hover">Home</Link> / <Link to="/guides" className="hover:text-cyan-hover">Guides</Link> / {guideData.name}</p>
+                        <p className="text-sm"><Link to="/" className="hover:text-cyan-hover">Home</Link> / <Link to="/guides" className="hover:text-cyan-hover">Guides</Link> / {breadcrumbs}</p>
                         <h1 className="text-3xl lg:text-5xl font-medium">Guide Details</h1>
                     </div>
                     <div>
