@@ -1,11 +1,16 @@
-import { Link } from "react-router-dom"
+import Header from "../NotFoundComponents/Header"
 
 export default function NotFoundPage() {
+
     return (
         <>
-            <h1 className="text-xl text-blue-500">Not Found Page</h1>
-            <br />
-            <Link to="/" className="border">Return Home</Link>
+            <div className="mx-auto max-w-7xl pt-24">
+                <div className="mx-6 lg:mx-20 mb-0 md:mb-8">
+                    <Header />
+                </div>
+            </div>
+            
+    
         </>
-    )
+    )      
 }
