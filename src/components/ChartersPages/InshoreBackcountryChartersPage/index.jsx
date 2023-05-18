@@ -3,6 +3,7 @@ import PhotoLeftCard1 from "../../CharterComponents/BackcountryPage/PhotoLeftCar
 import PhotoRightCard2 from "../../CharterComponents/BackcountryPage/PhotoRightCard2"
 import PhotoLeftCard3 from "../../CharterComponents/BackcountryPage/PhotoLeftCard3"
 import PhotoRightCard4 from "../../CharterComponents/BackcountryPage/PhotoRightCard4"
+import { Helmet } from "react-helmet"
 
 
 export default function InshoreBackcountryChartersPage() {
@@ -11,6 +12,9 @@ export default function InshoreBackcountryChartersPage() {
         <>
             <div className="mx-auto max-w-7xl pt-24">
                 <div className="mx-6 lg:mx-20 mb-0 md:mb-8">
+                    <Helmet>
+                        <title>Islamorada Fishing | Backcountry & Inshore Charters</title>
+                    </Helmet>
                     <Header />
                     <PhotoLeftCard1 />
                     <PhotoRightCard2 />
