@@ -15,6 +15,8 @@ import VisitPage from '../VisitPage'
 import FAQPage from '../FAQPage'
 import ContactPage from '../ContactPage'
 import PartnersPage from '../PartnersPage'
+import PartnersStayPage from '../PartnersStayPage'
+import PartnersPlayPage from '../PartnersPlayPage'
 import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
 import ScrollToTop from '../ScrollToTop'
@@ -226,6 +228,8 @@ function App() {
             <Route path="/frequently-asked-questions" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/partners" element={<PartnersPage />} />
+            <Route path="/partners/stay" element={<PartnersStayPage />} />
+            <Route path="/partners/play" element={<PartnersPlayPage />} />
             <Route path="/*" element={<NotFoundPage />} />
         </Routes>
     </>

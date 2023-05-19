@@ -1,5 +1,9 @@
 import Header from "../VisitPageComponents/Header"
 import { Helmet } from "react-helmet"
+import PhotoLeftCard1 from "../VisitPageComponents/PhotoLeftCard1"
+import PhotoRightCard2 from "../VisitPageComponents/PhotoRightCard2"
+import PhotoLeftCard3 from "../VisitPageComponents/PhotoLeftCard3"
+
 
 
 export default function VisitPage() {
@@ -12,6 +16,9 @@ export default function VisitPage() {
                         <title>Islamorada Fishing | Visit Islamorada</title>
                     </Helmet>
                     <Header />
+                    <PhotoLeftCard1 />
+                    <PhotoRightCard2 />
+                    <PhotoLeftCard3 />
                 </div>
             </div> 
         </>
