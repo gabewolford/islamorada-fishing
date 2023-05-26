@@ -20,6 +20,7 @@ import PartnersPlayPage from '../PartnersPlayPage'
 import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
 import ScrollToTop from '../ScrollToTop'
+import { Helmet } from 'react-helmet'
 
 
 function App() {
@@ -212,6 +213,10 @@ function App() {
 
   return (
     <>
+        <Helmet>
+            <meta name="description" content='Experience the ultimate fishing adventure in Islamorada, Florida Keys, with the Guides and Charters of World Wide Sportsman.'/>
+            <meta name="keywords" content='Fishing Guides, Fishing, Pro Fishing Guide, Fishing Charter, Florida Keys, Islamorada, Inshore Backcountry, Offshore, Sunset Tarpon, Flats Bonefish, Everglades Eco, Enviro Tours'/>
+        </Helmet>
         <ScrollToTop />
         <Nav />
         <Footer />
