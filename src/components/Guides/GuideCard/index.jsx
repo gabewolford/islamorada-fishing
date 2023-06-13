@@ -21,7 +21,7 @@ export default function GuideCard({ guideData, setDetailPage }) {
                 <div className="border-2 border-cyan-420 w-fit mb-4">
                     <h3 className="text-xl">Captain {guideData.name}</h3>
                     <div className="relative">
-                        <img src={guideData.pic} alt={guideData.name} />
+                        <img src={guideData.featured_pic} alt={guideData.name} />
                         {backcountryBadge}
                         {offshoreBadge}
                     </div>
