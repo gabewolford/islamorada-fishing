@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export default function DetailsHeader({ guideData }) {
+export default function DetailsBanner({ guideData }) {
     let captainName, businessName, guideType
     
     if (guideData) {
