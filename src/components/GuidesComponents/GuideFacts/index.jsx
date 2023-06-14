@@ -1,5 +1,5 @@
 export default function GuideFacts({ guideData }) {
-    let guideAboutMe, guideBoats, guideDock, guideSpecialty, guideFunFact, guideDaysOff, guidePhoto, guideName, boatHeading
+    let guideAboutMe, guideBoats, guideDock, guideSpecialty, guideFunFact, guideDaysOff, guidePhoto, guideName, boatHeading, badges
     if (guideData) {
         guideAboutMe = guideData.about_me
         guideBoats = guideData.boats
@@ -12,6 +12,20 @@ export default function GuideFacts({ guideData }) {
         guideDaysOff = guideData.days_off
         guidePhoto = '..' + guideData.featured_pic
         guideName = guideData.name
+        if (guideData.backcountry === true && guideData.offshore === true) {
+            badges = <h5 className="text-center">
+                        <span className="text-center text-xs bg-cyan-420 text-white px-2 mr-1 py-1 rounded-full">Offshore</span> 
+                        <span className="text-center text-xs bg-cyan-69 text-white px-2 py-1 rounded-full">Backcountry</span>
+                    </h5>
+        } else if (guideData.backcountry === true) {
+            badges = <h5 className="text-center">
+                        <span className="text-center text-xs bg-cyan-69 text-white px-2 py-1 rounded-full">Backcountry</span>
+                    </h5>
+        } else if (guideData.offshore === true) {
+            badges = <h5 className="text-center">
+                        <span className="text-center text-xs bg-cyan-420 text-white px-2 mr-1 py-1 rounded-full">Offshore</span> 
+                    </h5>
+        }
         if (guideData.boats.length > 1) {
             boatHeading = <h6 className="font-semibold">Boats</h6>
         } else {
@@ -64,7 +78,8 @@ export default function GuideFacts({ guideData }) {
                 </div>
 
                 <div className="order-0 lg:order-1 flex lg:w-1/3 hidden lg:block">
-                    <img src={guidePhoto} alt={guideName} className="object-cover"/>
+                    <img src={guidePhoto} alt={guideName} className="object-cover lg:mb-2"/>
+                    {badges}
                 </div>
                 
             </section>
