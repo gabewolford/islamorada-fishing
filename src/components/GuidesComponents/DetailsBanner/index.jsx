@@ -2,28 +2,27 @@ import { Link } from "react-router-dom"
 
 export default function DetailsBanner({ guideData }) {
     let captainName, businessName, guideType
-    
     if (guideData) {
         captainName = guideData.name
         businessName = guideData.business_name
         if (guideData.backcountry && guideData.offshore) {
-            guideType = 'Backcountry & Offshore'
+            guideType = 'Backcountry & Offshore Guide'
         } else if (guideData.backcountry) {
-            guideType = 'Backcountry'
+            guideType = 'Backcountry Guide'
         } else if (guideData.offshore) {
-            guideType = 'Offshore'
+            guideType = 'Offshore Guide'
         }
     }
 
 
     return (
         <>
-            <div className="flex flex-col items-start gap-3 mb-8 md:mb-16">
+            <div className="flex flex-col items-start gap-3 mb-3">
                 <p className="text-sm"><Link to="/" className="hover:text-cyan-hover">Home</Link> / <Link to="/guides" className="hover:text-cyan-hover">Guides</Link> / {captainName}</p>
             </div>
-            <div className="text-center">
-                {guideType && <h4>{guideType} Guide</h4>}
-                <h1 className="text-3xl lg:text-5xl font-medium">Capt. {captainName}</h1>
+            <div className="text-center mb-8">
+                {guideType && <h4 className="font-bold mb-3">{guideType}</h4>}
+                <h1 className="text-3xl lg:text-5xl font-bold mb-3">Capt. {captainName}</h1>
                 {businessName && <h5>of {businessName}</h5>}
             </div>
         </>
