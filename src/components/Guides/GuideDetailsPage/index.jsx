@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import DetailsBanner from "../../GuidesComponents/DetailsBanner"
+import GuideFacts from "../../GuidesComponents/GuideFacts"
 
 export default function GuideDetailsPage({ guideData, setDetailPage }) {
 
@@ -19,7 +20,8 @@ export default function GuideDetailsPage({ guideData, setDetailPage }) {
                     <Helmet>
                         <title>Islamorada Fishing | Guide Details</title>
                     </Helmet>
-                    <DetailsBanner guideData={guideData} setDetailPage={setDetailPage}/>
+                    <DetailsBanner guideData={guideData} />
+                    <GuideFacts guideData={guideData} />
                 </div>
             </div>
         </>
