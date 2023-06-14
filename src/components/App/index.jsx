@@ -21,7 +21,8 @@ import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
 import ScrollToTop from '../ScrollToTop'
 import { Helmet } from 'react-helmet'
-
+import lanceKeenePhoto from '../../assets/lance-keene.png'
+import chrisBarronPhoto from '../../assets/chris-barron.png'
 
 function App() {
   const [guides, setGuides] = useState([])
@@ -31,16 +32,30 @@ function App() {
     {
         name: 'Lance Keene',
         slug: 'lance-keene',
-        featured_pic: 'https://placehold.co/250x300',
+        featured_pic: lanceKeenePhoto,
         backcountry: true,
         offshore: false,
         business_name: 'Steelhead Hunter Charters',
         about_me: "I'm a full-time fishing guide half the season in the Florida Keys, and the other half in Michigan chasing salmon and steelhead.",
-        boat: '2400 Bay Ranger, 250HP Yamaha',
+        boats: ['2400 Bay Ranger w/ 250HP Yamaha'],
         dock: 'World Wide Sportsman',
         specialty: 'Snapper, snook, tarpon, permit',
         fun_fact: "I like to fish bass tournaments in Northern Michigan.",
         days_off: "I still spend time on the water trying new techniques, catching bait, or just trying to catch fish for myself."
+    },
+    {
+        name: 'Chris Barron',
+        slug: 'chris-barron',
+        featured_pic: chrisBarronPhoto,
+        backcountry: true,
+        offshore: true,
+        business_name: 'Stray Cat Charters',
+        about_me: "Originally from Abington, MA. I came to Islamorada in 1979 and started fishing offshore. After that I decided to buy a skiff and start my own business fishing the backcountry. Fishing is my passion. I have fished many tournaments throughout my time and I am a Mercury Pro Team Guide. Now, my focus and enjoyment comes from giving my customers a quality experience on the water for the best fishing possible. I am married to my wife, Christine, and we have two successful children. We are just a fishing family, we enjoy fishing together whenever we get the chance. A family that fishes together stays together.",
+        boats: ['18" Maverick w/ 150HP Mercury', '24" Everglades'],
+        dock: 'World Wide Sportsman',
+        specialty: 'Live bait fishing for tarpon and snook',
+        fun_fact: "My wife has the same name as me and we adopt Stray Cats hence Stray Cat Charters.",
+        days_off: "Besides taking my wife fishing, I really enjoy grilling on my Traeger, smoking fish and preparing feasts for family and friends."
     },
   ]
 
