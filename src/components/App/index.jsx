@@ -38,7 +38,7 @@ function App() {
       offshore: true,
       business_name: 'Stray Cat Charters',
       about_me: "Originally from Abington, MA. I came to Islamorada in 1979 and started fishing offshore. After that I decided to buy a skiff and start my own business fishing the backcountry. Fishing is my passion. I have fished many tournaments throughout my time and I am a Mercury Pro Team Guide. Now, my focus and enjoyment comes from giving my customers a quality experience on the water for the best fishing possible. I am married to my wife, Christine, and we have two successful children. We are just a fishing family, we enjoy fishing together whenever we get the chance. A family that fishes together stays together.",
-      boats: ['18" Maverick w/ 150HP Mercury', '24" Everglades'],
+      boats: [`18' Maverick w/ 150HP Mercury`, `24' Everglades`],
       dock: 'World Wide Sportsman',
       specialty: 'Live bait fishing for tarpon and snook',
       fun_fact: "My wife has the same name as me and we adopt Stray Cats hence Stray Cat Charters.",
