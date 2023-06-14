@@ -1,10 +1,10 @@
 export default function GuideFacts({ guideData }) {
-    let guideAboutMe, guideBoats, guideDock, guideSpecialty, guideFunFact, guideDaysOff, guidePhoto, guideName
+    let guideAboutMe, guideBoats, guideDock, guideSpecialty, guideFunFact, guideDaysOff, guidePhoto, guideName, boatHeading
     if (guideData) {
         guideAboutMe = guideData.about_me
         guideBoats = guideData.boats
             .map((boat, i) => {
-                return <li key={i} className="boat-list-item">{boat}</li>
+                return <li key={i} className="boat-list-item mb-1">{boat}</li>
             })
         guideDock = guideData.dock
         guideSpecialty = guideData.specialty
@@ -12,6 +12,11 @@ export default function GuideFacts({ guideData }) {
         guideDaysOff = guideData.days_off
         guidePhoto = '..' + guideData.featured_pic
         guideName = guideData.name
+        if (guideData.boats.length > 1) {
+            boatHeading = <h6 className="font-semibold">Boats</h6>
+        } else {
+            boatHeading = <h6 className="font-semibold">Boat</h6>
+        }
     }
 
     return (
@@ -28,37 +33,37 @@ export default function GuideFacts({ guideData }) {
                     <div className="flex flex-col lg:flex-row items-start gap-6">
                         <div className="flex flex-col gap-6 md:w-1/2">
                             <div className="flex flex-col items-start">
-                                <h6 className="font-semibold">Boat</h6>
-                                <p>{guideBoats}</p>
+                                {boatHeading}
+                                <p className="text-sm">{guideBoats}</p>
                             </div>
 
                             <div className="flex flex-col items-start">
                                 <h6 className="font-semibold">Dock</h6>
-                                <p>{guideDock}</p>
+                                <p className="text-sm">{guideDock}</p>
                             </div>
 
                             <div className="flex flex-col items-start">
                                 <h6 className="font-semibold">Specialty</h6>
-                                <p>{guideSpecialty}</p>
+                                <p className="text-sm">{guideSpecialty}</p>
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-6 lg:w-1/2">
                             <div className="flex flex-col items-start">
                                 <h6 className="font-semibold">A fun fact...</h6>
-                                <p>{guideFunFact}</p>
+                                <p className="text-sm">{guideFunFact}</p>
                             </div>
 
                             <div className="flex flex-col items-start">
                                 <h6 className="font-semibold">On my days off...</h6>
-                                <p>{guideDaysOff}</p>
+                                <p className="text-sm">{guideDaysOff}</p>
                             </div>
                         </div>
 
                     </div>
                 </div>
 
-                <div className="order-0 lg:order-1 flex lg:w-1/3">
+                <div className="order-0 lg:order-1 flex lg:w-1/3 hidden lg:block">
                     <img src={guidePhoto} alt={guideName} className="object-cover"/>
                 </div>
                 
