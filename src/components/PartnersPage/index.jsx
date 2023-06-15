@@ -1,7 +1,7 @@
 import Header from "../PartnersComponents/Header"
 import { Helmet } from "react-helmet"
 
-export default function PartnersPage() {
+export default function PartnersPage({ partnersList }) {
 
     return (
         <>
@@ -11,10 +11,12 @@ export default function PartnersPage() {
                         <title>Islamorada Fishing | Our Partners</title>
                     </Helmet>
                     <Header />
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 justify-center">
+                        {partnersList}
+                    </div>
                 </div>
             </div>
-            
-    
+
         </>
     )      
 }
