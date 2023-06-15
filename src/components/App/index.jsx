@@ -16,6 +16,7 @@ import VisitPage from '../VisitPage'
 import FAQPage from '../FAQPage'
 import ContactPage from '../ContactPage'
 import PartnersPage from '../PartnersPage'
+import PartnerCard from '../PartnersComponents/PartnerCard'
 import PartnersStayPage from '../PartnersStayPage'
 import PartnersPlayPage from '../PartnersPlayPage'
 import NotFoundPage from '../NotFoundPage'
@@ -24,9 +25,36 @@ import ScrollToTop from '../ScrollToTop'
 import lanceKeenePhoto from '../../assets/captains/lance-keene.png'
 import chrisBarronPhoto from '../../assets/captains/chris-barron.png'
 import mikeVeneziaPhoto from '../../assets/captains/mike-venezia.png'
+import bassProPhoto from '../../assets/partners/basspro.png'
+import wwsPhoto from '../../assets/partners/wws-logo.png'
+import amaraCayPhoto from '../../assets/partners/amaracay.png'
+import caribbeanWatersportsPhoto from '../../assets/partners/caribbean-watersports.png'
+import charterBoatAssocPhoto from '../../assets/partners/charterboatassoc.png'
+import cheecaPhoto from '../../assets/partners/cheeca-logo.png'
+import costaPhoto from '../../assets/partners/costa-sunglasses.png'
+import diawaPhoto from '../../assets/partners/diawa.png'
+import evergladesCoalitionPhoto from '../../assets/partners/evergladescoalition.png'
+import fishForHollyPhoto from '../../assets/partners/fish-for-holly.png'
+import floridaBayPhoto from '../../assets/partners/florida-bay-forever.png'
+import floridaFishWildlifePhoto from '../../assets/partners/florida-fish-wildlife.png'
+import grassyFlatsPhoto from '../../assets/partners/grassyflats.png'
+import chamberPhoto from '../../assets/partners/islamorada-chamber.png'
+import islamoradaTimesPhoto from '../../assets/partners/islamorada-times.png'
+import fishingGuidesAssocPhoto from '../../assets/partners/keysfishingguidesassoc.png'
+import mangroveMikesPhoto from '../../assets/partners/mangrove-mikes.png'
+import markeysPhoto from '../../assets/partners/markeys-marine.png'
+import maverickPhoto from '../../assets/partners/maverick.png'
+import mercuryPhoto from '../../assets/partners/mercury-marine.png'
+import pennPhoto from '../../assets/partners/penn.png'
+import saltwaterSportsmanPhoto from '../../assets/partners/saltwater-sportsman.png'
+import strayCatPhoto from '../../assets/partners/straycat-charters.png'
+import tarponTrustPhoto from '../../assets/partners/tarpontrust.png'
+import upperKeysRotaryPhoto from '../../assets/partners/upper-keys-rotary.png'
+
 
 function App() {
   const [guides, setGuides] = useState([])
+  const [partners, setPartners] = useState([])
   const [detailPage, setDetailPage] = useState()
 
   const allGuides = [
@@ -284,14 +312,149 @@ function App() {
     },
   ]
 
+  const allPartners = [
+    {
+      name: 'Amara Cay Resort',
+      image: amaraCayPhoto,
+      url: 'https://www.islamoradaresortcollection.com/amara-cay-resort'
+    },
+    {
+      name: 'Bass Pro Shops',
+      image: bassProPhoto,
+      url: 'https://www.basspro.com/'
+    },
+    {
+      name: "Bonefish & Tarpon Trust",
+      image: tarponTrustPhoto,
+      url: 'https://www.bonefishtarpontrust.org/'
+    },
+    {
+      name: 'Caribbean Watersports',
+      image: caribbeanWatersportsPhoto,
+      url: 'https://www.caribbeanwatersports.com/'
+    },
+    {
+      name: 'Cheeca Lodge & Spa',
+      image: cheecaPhoto,
+      url: 'https://www.cheeca.com/'
+    },
+    {
+      name: 'Costa Del Mar Sunglasses',
+      image: costaPhoto,
+      url: 'https://www.costadelmar.com/'
+    },
+    {
+      name: 'Diawa',
+      image: diawaPhoto,
+      url: 'https://daiwa.us/'
+    },
+    {
+      name: 'Everglades Coalition',
+      image: evergladesCoalitionPhoto,
+      url: 'https://www.evergladescoalition.org/'
+    },
+    {
+      name: 'Fish For Holly',
+      image: fishForHollyPhoto,
+      url: 'http://fishforholly.com/'
+    },
+    {
+      name: 'Florida Bay Forever',
+      image: floridaBayPhoto,
+      url: 'https://www.floridabayforever.org/'
+    },
+    {
+      name: 'Florida Fish & Wildlife Commission',
+      image: floridaFishWildlifePhoto,
+      url: 'https://myfwc.com/'
+    },
+    {
+      name: 'Florida Keys Fishing Guides Association',
+      image: fishingGuidesAssocPhoto,
+      url: 'https://fkfga.org/'
+    },
+    {
+      name: 'Grassy Flats Resort & Beach Club',
+      image: grassyFlatsPhoto,
+      url: 'https://www.grassyflats.com/'
+    },
+    {
+      name: 'Islamorada Charter Boat Association',
+      image: charterBoatAssocPhoto,
+      url: 'https://www.islamoradacharterboatassociation.org/'
+    },
+    {
+      name: 'Islamorada Chamber of Commerce',
+      image: chamberPhoto,
+      url: 'https://islamoradachamber.com/'
+    },
+    {
+      name: 'Islamorada Times',
+      image: islamoradaTimesPhoto,
+      url: 'https://www.islamoradatimes.com/'
+    },
+    {
+      name: "Mangrove Mike's",
+      image: mangroveMikesPhoto,
+      url: 'https://www.mangrovemikes.com/'
+    },
+    {
+      name: "Markey Marine Service",
+      image: markeysPhoto,
+      url: 'https://www.markeymarine.com/'
+    },
+    {
+      name: "Maverick Boats",
+      image: maverickPhoto,
+      url: 'https://www.maverickboats.com/'
+    },
+    {
+      name: "Mercury Marine",
+      image: mercuryPhoto,
+      url: 'https://www.mercurymarine.com/'
+    },
+    {
+      name: "Penn Fishing Gear",
+      image: pennPhoto,
+      url: 'https://www.pennfishing.com/'
+    },
+    {
+      name: "Salt Water Sportsman",
+      image: saltwaterSportsmanPhoto,
+      url: 'https://www.saltwatersportsman.com/'
+    },
+    {
+      name: "Stray Cat Charters",
+      image: strayCatPhoto,
+      url: 'https://www.straycatscharters.com/'
+    },
+    {
+      name: "Upper Keys Rotary Club",
+      image: upperKeysRotaryPhoto,
+      url: 'https://keysrotary.org/'
+    },
+    {
+      name: 'World Wide Sportsman',
+      image: wwsPhoto,
+      url: 'https://www.basspro.com/'
+    },
+  ]
+
   useEffect(() => {
     setGuides(allGuides)
+    setPartners(allPartners)
   }, [])
 
   let guidesList 
   if (allGuides.length > 0) {
     guidesList = guides
       .map((guide, i) => <GuideCard key={i} guideData={guide} setDetailPage={setDetailPage}/>)
+  }
+
+  let partnersList
+  if (allPartners.length > 0) {
+    partnersList = partners
+      .map((partner, i) => <PartnerCard key={i} partnerData={partner} />)
   }
 
   return (
@@ -302,6 +465,7 @@ function App() {
         </Helmet>
         <ScrollToTop />
         <Nav />
+        <PartnerCard/>
         <Footer />
         
         <Routes>
@@ -315,7 +479,7 @@ function App() {
             <Route path="/visit-islamorada" element={<VisitPage />} />
             <Route path="/frequently-asked-questions" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/partners" element={<PartnersPage />} />
+            <Route path="/partners" element={<PartnersPage partnersList={partnersList} />} />
             <Route path="/partners/stay" element={<PartnersStayPage />} />
             <Route path="/partners/play" element={<PartnersPlayPage />} />
             <Route path="/*" element={<NotFoundPage />} />
