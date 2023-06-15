@@ -2,8 +2,17 @@ import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import DetailsBanner from "../../GuidesComponents/DetailsBanner"
 import GuideFacts from "../../GuidesComponents/GuideFacts"
+import { useParams } from "react-router-dom"
 
-export default function GuideDetailsPage({ guideData, setDetailPage }) {
+
+export default function GuideDetailsPage({ guideData, setDetailPage, guides }) {
+    const { slug } = useParams()
+
+    for (let i = 0; i < guides.length; i++) {
+        if (guides[i].slug === slug) {
+            setDetailPage(guides[i])
+        }
+    }
 
     useEffect(() => {
         if (guideData) {

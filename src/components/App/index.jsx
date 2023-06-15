@@ -2,6 +2,7 @@ import './styles.css'
 import preline from 'preline'
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 import Nav from '../Nav'
 import HomePage from '../HomePage'
 import AllChartersPage from '../ChartersPages/AllChartersPage'
@@ -20,7 +21,6 @@ import PartnersPlayPage from '../PartnersPlayPage'
 import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
 import ScrollToTop from '../ScrollToTop'
-import { Helmet } from 'react-helmet'
 import lanceKeenePhoto from '../../assets/lance-keene.png'
 import chrisBarronPhoto from '../../assets/chris-barron.png'
 import mikeVeneziaPhoto from '../../assets/mike-venezia.png'
@@ -272,8 +272,8 @@ function App() {
       name: 'Alex Adler',
       slug: 'alex-adler',
       featured_pic: mikeVeneziaPhoto,
-      backcountry: true,
-      offshore: false,
+      backcountry: false,
+      offshore: true,
       business_name: "the Kalex",
       about_me: "I've been charter fishing as the owner-operator aboard the Kalex out of Islamorada's famed Bud N' Mary's Marina since 1976. Prior to moving to the Keys, I fished out of Bahia Pez Vela Lodge in Costa Rica immediately out of high school and rapidly became known as an innovator in saltwater fishing. Once in the Keys, I learned from some of the best in the business including legendary captains like Allan Starr, Don Gurgulio, Sarge Warner, Cecil Keith, and Jimmy Albright. Harold Adler, my father, was also a major mentor in my fishing career. It wasn’t long after my move to the Keys that I began an impressive series of tournament wins, including winning the 1981 Bimini Blue Marlin Tournament, and twice winning the Cat Cay Tuna Tournament. I have won countless tournaments in the Florida Keys, including the Florida Keys Triple Crown Series and the Florida Keys Gold Cup events, yet I am also an expert at all aspects of Keys fishing, including dolphinfish and reef fishing. Recently I has been selected as a recipient of the IGFA Tommy Gifford.",
       boats: [`48' Custom Marine w/ twin Cummins`],
@@ -310,8 +310,8 @@ function App() {
             <Route path="/charters/inshore-backcountry" element={<InshoreBackcountryChartersPage />} />
             <Route path="/charters/offshore" element={<OffshoreChartersPage />} />
             <Route path="/charters/eco-enviro-tours" element={<EcoEnviroToursPage />} />
-            <Route path="/guides" element={<GuidesPage guidesList={guidesList}/>} />
-            <Route path="/guides/:name" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} />}  />
+            <Route path="/guides" element={<GuidesPage guidesList={guidesList} />} />
+            <Route path="/guides/:slug" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} guides={guides}/>}  />
             <Route path="/visit-islamorada" element={<VisitPage />} />
             <Route path="/frequently-asked-questions" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
