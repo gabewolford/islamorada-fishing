@@ -8,19 +8,26 @@ import { useParams } from "react-router-dom"
 export default function GuideDetailsPage({ guideData, setDetailPage, guides }) {
     const { slug } = useParams()
 
-    for (let i = 0; i < guides.length; i++) {
-        if (guides[i].slug === slug) {
-            setDetailPage(guides[i])
-        }
-    }
-
     useEffect(() => {
+        const updateDetailPage = () => {
+          for (let i = 0; i < guides.length; i++) {
+            if (guides[i].slug === slug) {
+              setDetailPage(guides[i])
+              break;
+            }
+          }
+        };
+    
         if (guideData) {
-            localStorage.setItem('guide', JSON.stringify(guideData))
+          localStorage.setItem('guide', JSON.stringify(guideData));
         } else {
-            setDetailPage(JSON.parse(localStorage.getItem('guide')))
+          const storedGuide = JSON.parse(localStorage.getItem('guide'));
+          setDetailPage(storedGuide);
         }
-    }, [])
+    
+        updateDetailPage();
+    
+      }, [slug, guides, guideData, setDetailPage]);
 
     return (
         <>
