@@ -21,9 +21,9 @@ import PartnersPlayPage from '../PartnersPlayPage'
 import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
 import ScrollToTop from '../ScrollToTop'
-import lanceKeenePhoto from '../../assets/lance-keene.png'
-import chrisBarronPhoto from '../../assets/chris-barron.png'
-import mikeVeneziaPhoto from '../../assets/mike-venezia.png'
+import lanceKeenePhoto from '../../assets/captains/lance-keene.png'
+import chrisBarronPhoto from '../../assets/captains/chris-barron.png'
+import mikeVeneziaPhoto from '../../assets/captains/mike-venezia.png'
 
 function App() {
   const [guides, setGuides] = useState([])

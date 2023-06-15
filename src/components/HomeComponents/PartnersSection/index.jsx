@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import bassproImage from '../../../assets/basspro.png'
-import grassyflatsImage from '../../../assets/grassyflats.png'
-import amaracayImage from '../../../assets/amaracay.png'
-import tarpontrustImage from '../../../assets/tarpontrust.png'
-import evergladescoalitionImage from '../../../assets/evergladescoalition.png'
-import charterboatassocImage from '../../../assets/charterboatassoc.png'
-import keysfishingguidesImage from '../../../assets/keysfishingguidesassoc.png'
+import bassproImage from '../../../assets/partners/basspro.png'
+import grassyflatsImage from '../../../assets/partners/grassyflats.png'
+import amaracayImage from '../../../assets/partners/amaracay.png'
+import tarpontrustImage from '../../../assets/partners/tarpontrust.png'
+import evergladescoalitionImage from '../../../assets/partners/evergladescoalition.png'
+import charterboatassocImage from '../../../assets/partners/charterboatassoc.png'
+import keysfishingguidesImage from '../../../assets/partners/keysfishingguidesassoc.png'
 
 export default function PartnersSection() {
     return (
