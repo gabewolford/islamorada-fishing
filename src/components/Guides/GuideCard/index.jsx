@@ -28,7 +28,7 @@ export default function GuideCard({ guideData, setDetailPage }) {
                 onClick={() => setDetailPage(guideData)}
                 className="p-4 hover-grow"
             >
-                <img src={guidePhoto} alt="" />
+                <img src={guidePhoto} alt={guideName}/>
                 {guideName}
                 {badges}
             </Link>
