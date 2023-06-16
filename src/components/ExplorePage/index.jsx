@@ -1,8 +1,8 @@
-import Header from "../VisitPageComponents/Header"
+import Header from "../ExplorePageComponents/Header"
 import { Helmet } from "react-helmet"
-import PhotoLeftCard1 from "../VisitPageComponents/PhotoLeftCard1"
-import PhotoRightCard2 from "../VisitPageComponents/PhotoRightCard2"
-import PhotoLeftCard3 from "../VisitPageComponents/PhotoLeftCard3"
+import PhotoLeftCard1 from "../ExplorePageComponents/PhotoLeftCard1"
+import PhotoRightCard2 from "../ExplorePageComponents/PhotoRightCard2"
+import PhotoLeftCard3 from "../ExplorePageComponents/PhotoLeftCard3"
 
 
 
@@ -13,7 +13,7 @@ export default function ExplorePage() {
             <div className="mx-auto max-w-7xl pt-24">
                 <div className="mx-6 lg:mx-20 mb-16">
                     <Helmet>
-                        <title>Islamorada Fishing | Visit Islamorada</title>
+                        <title>Islamorada Fishing | Explore Islamorada</title>
                     </Helmet>
                     <Header />
                     <PhotoLeftCard1 />
