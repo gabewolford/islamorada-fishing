@@ -29,7 +29,7 @@ export default function Footer() {
                     </div>
                     <div className="grid space-y-3 text-sm">
                         <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/guides">Guides</Link></p>
-                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/visit-islamorada">Visit Islamorada</Link></p>
+                        <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/explore-islamorada">Explore Islamorada</Link></p>
                         <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/frequently-asked-questions">FAQs</Link></p>
                         <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/partners">Our Partners</Link></p>
                     </div>

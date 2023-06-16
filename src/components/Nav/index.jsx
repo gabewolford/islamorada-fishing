@@ -60,8 +60,8 @@ export default function NavBar() {
 
                 <Link 
                   className="font-medium hover:text-cyan-420 sm:py-6" 
-                  to="/visit-islamorada">
-                  Visit Islamorada
+                  to="/explore-islamorada">
+                  Explore Islamorada
                 </Link>
 
                 <Link className="font-medium  hover:text-cyan-420 sm:py-6" to="/frequently-asked-questions">FAQs</Link>
