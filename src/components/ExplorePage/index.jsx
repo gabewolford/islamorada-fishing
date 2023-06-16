@@ -6,7 +6,7 @@ import PhotoLeftCard3 from "../VisitPageComponents/PhotoLeftCard3"
 
 
 
-export default function VisitPage() {
+export default function ExplorePage() {
 
     return (
         <>
