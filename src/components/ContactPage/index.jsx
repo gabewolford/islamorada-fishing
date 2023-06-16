@@ -11,6 +11,9 @@ export default function ContactPage() {
                         <title>Islamorada Fishing | Contact Us</title>
                     </Helmet>
                     <Header />
+                    <form>
+                        
+                    </form>
                 </div>
             </div>
             
