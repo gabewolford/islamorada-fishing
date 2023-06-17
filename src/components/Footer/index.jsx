@@ -13,7 +13,7 @@ export default function Footer() {
                     </div>
                     <div className="absolute px-6 lg:px-44 flex flex-col text-center">
                         <h4 className="text-2xl md:text-3xl text-white font-medium mb-4">Plan your custom fishing charter with our help.</h4>
-                        <h6 className="text-base md:text-lg text-white mb-4">Not sure which charter or guide is right for you? Have questions? Talk with our experts who will help you plan and book your perfect Florida Keys fishing trip today!</h6>
+                        <h5 className="text-base md:text-lg text-white mb-4">Not sure which charter or guide is right for you? Have questions? Talk with our experts who will help you plan and book your perfect Florida Keys fishing trip today!</h5>
                         <Link to="/contact" className="text-cyan-420 font-medium bg-white hover:bg-cyan-hover hover:text-white transition duration-300 ease-in-out rounded-3xl px-5 py-3.5 block w-fit mx-auto">Contact Us</Link>
                     </div>
                 </div>
@@ -37,8 +37,8 @@ export default function Footer() {
                         <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/contact">Contact Us</Link></p>
                         <p className="inline-flex gap-x-2 text-white">Call us today <span className="text-white font-bold">305-394-7484</span></p>
                         <p className="inline-flex gap-x-2 text-white"> 
-                            <a href="https://www.facebook.com/islamoradafishingguidesandcharters" target="_blank" className="mr-2"><span><img src={facebookLogo} alt="facebook"/></span></a>
-                            <a href="https://www.instagram.com/islamoradafishingguides/" target="_blank"><span><img src={instagramLogo} alt="instagram"/></span></a>
+                            <a href="https://www.facebook.com/islamoradafishingguidesandcharters" target="_blank" className="mr-2"><span><img src={facebookLogo} alt="facebook" className="w-full h-full"/></span></a>
+                            <a href="https://www.instagram.com/islamoradafishingguides/" target="_blank"><span><img src={instagramLogo} alt="instagram" className="w-full h-full"/></span></a>
                         </p>
                     </div>
                     <div className="col-span-full col-span-2">
