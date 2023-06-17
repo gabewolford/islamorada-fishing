@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet"
 export default function HomePage() {
     return (
         <>
-            <div className="mx-auto max-w-7xl pt-24">
+            <div className="mx-auto max-w-7xl pt-8 md:pt-24">
                 <Helmet>
                     <title>Islamorada Fishing Guides and Charters | Florida Keys</title>
                 </Helmet>
