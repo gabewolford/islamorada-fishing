@@ -26,6 +26,15 @@ body {
     scale: 1.05;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: 700ms;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+  }
+
 @media only screen and (min-width: 300px) {
     body {
         padding-bottom: 830px;

@@ -4,7 +4,7 @@ import offshoreImage from '../../../../assets/offshore-image-home.png'
 export default function PhotoRightCard2() {
     return (
         <>
-            <div className="flex flex-col-reverse md:flex-row items-center gap-6 lg:gap-28 order-1 mb-16">
+            <div className="fade-in flex flex-col-reverse md:flex-row items-center gap-6 lg:gap-28 order-1 mb-16">
                 <img className="md:w-1/2 order-1" src={offshoreImage} alt="Hero Image" />
                 <div className="flex flex-col lg:ml-20 order-0">
                     <h4 className="text-2xl md:text-3xl font-medium leading-7 mb-4 ">Reef & Offshore</h4>

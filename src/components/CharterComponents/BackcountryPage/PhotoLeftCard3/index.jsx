@@ -4,7 +4,7 @@ import snookImage from '../../../../assets/snook.png'
 export default function PhotoLeftCard3() {
     return (
         <>
-            <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1 mb-16">
+            <div className="fade-in flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1 mb-16">
                 <img className="md:w-1/2" src={snookImage} alt="Snook Image" />
                 <div className="flex flex-col items-start lg:mr-20">
                     <h4 className="text-2xl md:text-3xl font-medium leading-7 mb-4 ">Snook, Redfish & Trout</h4>

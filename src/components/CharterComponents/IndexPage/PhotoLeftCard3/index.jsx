@@ -4,7 +4,7 @@ import ecotoursImage from '../../../../assets/ecotours-image-home.png'
 export default function PhotoLeftCard3() {
     return (
         <>
-            <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1">
+            <div className="fade-in flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1">
                 <img className="md:w-1/2" src={ecotoursImage} alt="Backcountry Image" />
                 <div className="flex flex-col lg:mr-20">
                     <h4 className="text-2xl md:text-3xl font-medium leading-7 mb-4 ">Eco & Enviro Tours</h4>

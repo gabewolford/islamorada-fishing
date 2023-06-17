@@ -1,10 +1,32 @@
 import { Link } from "react-router-dom"
 import wwsImage from '../../../assets/wws-image-home.png'
+import { useEffect } from "react"
 
 export default function PhotoLeftCard1() {
+
+    useEffect(() => {
+        const cards = document.querySelectorAll('.fade-in')
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('show', entry.isIntersecting)
+                if (entry.isIntersecting) {
+                    observer.unobserve(entry.target)
+                }
+            })
+        },
+        {
+            threshold: .25,
+        }
+        )
+    
+        cards.forEach(card => {
+            observer.observe(card)
+        })
+    }, [])
+
     return (
         <>
-            <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1 mb-0 md:mb-16">
+            <div className="fade-in show flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1 mb-0 md:mb-16">
                 <img className="md:w-1/2" src={wwsImage} alt="World Wide Sportsman Image" />
                 <div className="flex flex-col items-start lg:mr-20">
                     <h4 className="text-2xl md:text-3xl font-medium leading-7 mb-4 ">Meet us at World Wide Sportsman</h4>
