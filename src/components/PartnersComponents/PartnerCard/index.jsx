@@ -11,6 +11,7 @@ export default function PartnerCard({ partnerData }) {
             <a
                 href={partnerURL}
                 target="_blank"
+                rel="noreferrer"
                 className="p-4 hover-grow"
             >
                 <img src={partnerPhoto} alt={partnerName} className="mx-auto"/>

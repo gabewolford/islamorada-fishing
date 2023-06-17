@@ -441,7 +441,7 @@ function App() {
   useEffect(() => {
     setGuides(allGuides)
     setPartners(allPartners)
-  }, [])
+  }, [allGuides, allPartners])
 
   let guidesList 
   if (allGuides.length > 0) {

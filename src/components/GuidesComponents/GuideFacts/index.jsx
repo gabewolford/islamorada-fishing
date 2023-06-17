@@ -4,7 +4,7 @@ export default function GuideFacts({ guideData }) {
         guideAboutMe = guideData.about_me
         guideBoats = guideData.boats
             .map((boat, i) => {
-                return <li key={i} className="boat-list-item mb-1">{boat}</li>
+                return <li key={i} className="boat-list-item">{boat}</li>
             })
         guideDock = guideData.dock
         guideSpecialty = guideData.specialty
