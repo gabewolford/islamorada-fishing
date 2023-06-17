@@ -15,6 +15,7 @@ import GuideDetailsPage from '../Guides/GuideDetailsPage'
 import ExplorePage from '../ExplorePage'
 import FAQPage from '../FAQPage'
 import ContactPage from '../ContactPage'
+import ContactConfirmationPage from '../ContactConfirmationPage'
 import PartnersPage from '../PartnersPage'
 import PartnerCard from '../PartnersComponents/PartnerCard'
 import NotFoundPage from '../NotFoundPage'
@@ -477,6 +478,7 @@ function App() {
             <Route path="/explore-islamorada" element={<ExplorePage />} />
             <Route path="/frequently-asked-questions" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/contact/confirmation" element={<ContactConfirmationPage />} />
             <Route path="/partners" element={<PartnersPage partnersList={partnersList} />} />
             <Route path="/*" element={<NotFoundPage />} />
         </Routes>

@@ -1,7 +1,10 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
 export default function ContactForm() { 
+    const navigate = useNavigate();
+
     const today = new Date();
     const year = today.getFullYear();
     let month = today.getMonth() + 1;
@@ -28,6 +31,7 @@ export default function ContactForm() {
           });
 
         e.target.reset()
+        navigate('/contact/confirmation');
       };
 
     return (
