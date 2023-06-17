@@ -10,7 +10,7 @@ export default function HomePage() {
         <>
             <div className="mx-auto max-w-7xl pt-8 md:pt-24">
                 <Helmet>
-                    <title>Islamorada Fishing Guides and Charters | Florida Keys</title>
+                    <title>Islamorada Fishing Guides & Charters | Florida Keys</title>
                 </Helmet>
                 <HeroCard />
                 <CharterTypes />
