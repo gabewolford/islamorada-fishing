@@ -63,7 +63,7 @@ export default function GuideFacts({ guideData }) {
                     </div>
                 </div>
 
-                <div className="order-0 lg:order-1 flex lg:w-1/3 hidden lg:block">
+                <div className="order-0 lg:order-1 flex lg:w-1/3">
                     <img src={guidePhoto} alt={guideName} className="object-cover"/>
                 </div>
                 
