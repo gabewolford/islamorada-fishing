@@ -4,13 +4,14 @@ import PhotoRightCard2 from "../../CharterComponents/BackcountryPage/PhotoRightC
 import PhotoLeftCard3 from "../../CharterComponents/BackcountryPage/PhotoLeftCard3"
 import PhotoRightCard4 from "../../CharterComponents/BackcountryPage/PhotoRightCard4"
 import { Helmet } from "react-helmet"
+import 'animate.css'
 
 
 export default function InshoreBackcountryChartersPage() {
 
     return (
         <>
-            <div className="mx-auto max-w-7xl pt-8 md:pt-24">
+            <div className="mx-auto max-w-7xl pt-8 md:pt-24 animate__animated animate__fadeIn">
                 <div className="mx-6 lg:mx-20 mb-0 md:mb-8">
                     <Helmet>
                         <title>Islamorada Fishing | Backcountry & Inshore Charters</title>
