@@ -37,8 +37,8 @@ export default function Footer() {
                         <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/contact">Contact Us</Link></p>
                         <p className="inline-flex gap-x-2 text-white">Call us today <span className="text-white font-bold">305-394-7484</span></p>
                         <p className="inline-flex gap-x-2 text-white"> 
-                            <a href="https://www.facebook.com/islamoradafishingguidesandcharters" target="_blank" className="mr-2"><span><img src={facebookLogo}/></span></a>
-                            <a href="https://www.instagram.com/islamoradafishingguides/" target="_blank"><span><img src={instagramLogo}/></span></a>
+                            <a href="https://www.facebook.com/islamoradafishingguidesandcharters" target="_blank" className="mr-2"><span><img src={facebookLogo} alt="facebook"/></span></a>
+                            <a href="https://www.instagram.com/islamoradafishingguides/" target="_blank"><span><img src={instagramLogo} alt="instagram"/></span></a>
                         </p>
                     </div>
                     <div className="col-span-full col-span-2">
