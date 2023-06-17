@@ -13,7 +13,7 @@ export default function CharterTypes() {
                     <div className="flex flex-col md:flex-row md:grid md:grid-cols-3 md:flex-wrap md:gap-6 items-center self-stretch">
                         <div className="flex items-center md:flex-col self-stretch mb-6 gap-4">
                             <div className="w-2/5 md:w-auto">
-                                <img className="" src={backcountryImage} />
+                                <img className="" src={backcountryImage} alt="backcountry"/>
                             </div>
                             <div className="flex flex-col items-start w-3/5 md:w-full gap-2">
                                 <h4 className="text-base md:text-lg font-medium">Backcountry & Inshore</h4>
@@ -23,7 +23,7 @@ export default function CharterTypes() {
                         </div>
                         <div className="flex items-center md:flex-col self-stretch mb-6 gap-4">
                             <div className="w-2/5 md:w-auto">
-                                <img className="" src={offshoreImage} />
+                                <img className="" src={offshoreImage} alt="offshore"/>
                             </div>
                             <div className="flex flex-col items-start w-3/5 md:w-full gap-2">
                                 <h4 className="text-base md:text-lg font-medium">Reef & Offshore</h4>
@@ -33,7 +33,7 @@ export default function CharterTypes() {
                         </div>
                         <div className="flex items-center md:flex-col self-stretch md:mb-6 gap-4">
                             <div className="w-2/5 md:w-auto">
-                                <img className="" src={ecotoursImage} />
+                                <img className="" src={ecotoursImage} alt="eco/enviro"/>
                             </div>
                             <div className="flex flex-col items-start w-3/5 md:w-full gap-2">
                                 <h4 className="text-base md:text-lg font-medium">Eco & Enviro Tours</h4>
