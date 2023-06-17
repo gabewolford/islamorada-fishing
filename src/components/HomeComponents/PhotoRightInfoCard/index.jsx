@@ -28,7 +28,7 @@ export default function PhotoRightInfoCard() {
         <>
             <div className="fade-in flex flex-col-reverse md:flex-row items-center gap-6 lg:gap-28 order-1 mx-6 lg:mx-20 mb-16">
                 <div className="flex order-1">
-                    <img src={wwsImage} alt="Hero Image" />
+                    <img src={wwsImage} className="w-full h-full" alt="Hero Image" />
                 </div>
                 <div className="flex flex-col lg:ml-20 order-0">
                     <h4 className="text-2xl md:text-3xl font-medium leading-7 mb-4 ">Meet us at World Wide Sportsman</h4>

@@ -28,7 +28,7 @@ export default function PhotoLeftInfoCard() {
         <>
             <div className="fade-in flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1 mx-6 lg:mx-20 mb-16">
                 <div className="flex">
-                    <img src={bookdirectlyImage} alt="Hero Image" />
+                    <img src={bookdirectlyImage} className="w-full h-full" alt="Hero Image" />
                 </div>
                 <div className="flex flex-col lg:mr-20">
                     <h4 className="text-2xl md:text-3xl font-medium leading-7 mb-4 ">Book directly with one of our local guides</h4>
