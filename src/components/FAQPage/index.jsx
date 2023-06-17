@@ -12,6 +12,7 @@ export default function FAQPage() {
                         <title>Islamorada Fishing | FAQs</title>
                     </Helmet>
                     <Header />
+                    <p className="text-lg">Coming soon...</p>
                 </div>
             </div>
             
