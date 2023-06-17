@@ -2,8 +2,30 @@ import { Link } from "react-router-dom"
 import backcountryImage from '../../../assets/backcountry-image-home.png'
 import offshoreImage from '../../../assets/offshore-image-home.png'
 import ecotoursImage from '../../../assets/ecotours-image-home.png'
+import { useEffect } from "react"
 
 export default function CharterTypes() {
+
+    useEffect(() => {
+        const cards = document.querySelectorAll('.fade-in')
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('show', entry.isIntersecting)
+                if (entry.isIntersecting) {
+                    observer.unobserve(entry.target)
+                }
+            })
+        },
+        {
+            threshold: .25,
+        }
+        )
+    
+        cards.forEach(card => {
+            observer.observe(card)
+        })
+    }, [])
+
     return (
         <>
             <div className="mx-6 lg:mx-20 mb-16">

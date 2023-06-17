@@ -1,10 +1,32 @@
 import { Link } from "react-router-dom";
 import bookdirectlyImage from '../../../assets/book-directly-image-home.png'
+import { useEffect } from "react";
 
 export default function PhotoLeftInfoCard() {
+
+    useEffect(() => {
+        const cards = document.querySelectorAll('.fade-in')
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('show', entry.isIntersecting)
+                if (entry.isIntersecting) {
+                    observer.unobserve(entry.target)
+                }
+            })
+        },
+        {
+            threshold: .25,
+        }
+        )
+    
+        cards.forEach(card => {
+            observer.observe(card)
+        })
+    }, [])
+
     return (
         <>
-            <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1 mx-6 lg:mx-20 mb-16">
+            <div className="fade-in flex flex-col md:flex-row items-center gap-6 lg:gap-28 order-1 mx-6 lg:mx-20 mb-16">
                 <div className="flex">
                     <img src={bookdirectlyImage} alt="Hero Image" />
                 </div>

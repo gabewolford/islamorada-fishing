@@ -6,11 +6,33 @@ import tarpontrustImage from '../../../assets/partners/tarpontrust.png'
 import evergladescoalitionImage from '../../../assets/partners/evergladescoalition.png'
 import charterboatassocImage from '../../../assets/partners/charterboatassoc.png'
 import keysfishingguidesImage from '../../../assets/partners/keysfishingguidesassoc.png'
+import { useEffect } from "react";
 
 export default function PartnersSection() {
+
+    useEffect(() => {
+        const cards = document.querySelectorAll('.fade-in')
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('show', entry.isIntersecting)
+                if (entry.isIntersecting) {
+                    observer.unobserve(entry.target)
+                }
+            })
+        },
+        {
+            threshold: .25,
+        }
+        )
+    
+        cards.forEach(card => {
+            observer.observe(card)
+        })
+    }, [])
+
     return (
         <>
-            <div className="flex flex-col items-center mx-6 lg:mx-20 gap-6">
+            <div className="fade-in flex flex-col items-center mx-6 lg:mx-20 gap-6">
                 <h3 className="text-2xl lg:text-3xl font-medium mb-2">Featured partners</h3>
                 <div className="flex flex-row justify-center gap-12">
                     <div className="w-1/3 md:w-1/6 lg:w-{1/7}">
