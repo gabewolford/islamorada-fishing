@@ -14,7 +14,7 @@ export default function PartnerCard({ partnerData }) {
                 rel="noreferrer"
                 className="p-4 hover-grow"
             >
-                <img src={partnerPhoto} alt={partnerName} className="mx-auto w-full h-full"/>
+                <img src={partnerPhoto} alt={partnerName} className="mx-auto w-full"/>
                 {partnerName}
             </a>
         </>
