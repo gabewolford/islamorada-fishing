@@ -30,7 +30,8 @@ export default function NavBar() {
                     </svg>
                   </button>
 
-                  <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.5ms] sm:duration-[200ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-50 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5">
+                  <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.5ms] sm:duration-[200ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-50 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5"
+                  data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                     
                     <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" to="/charters">
                       All Charters
@@ -54,19 +55,21 @@ export default function NavBar() {
                 </div>
                 <Link 
                   className="font-medium hover:text-cyan-420" 
-                  to="/guides">
+                  to="/guides"
+                  data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                   Guides
                 </Link>
 
                 <Link 
                   className="font-medium hover:text-cyan-420 sm:py-6" 
-                  to="/explore-islamorada">
+                  to="/explore-islamorada"
+                  data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                   Explore Islamorada
                 </Link>
 
-                {/* <Link className="font-medium  hover:text-cyan-420 sm:py-6" to="/frequently-asked-questions">FAQs</Link> */}
+                {/* <Link className="font-medium  hover:text-cyan-420 sm:py-6" to="/frequently-asked-questions" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">FAQs</Link> */}
 
-                <Link className="font-medium  hover:text-cyan-420 sm:py-6" to="/contact">Contact</Link>
+                <Link className="font-medium  hover:text-cyan-420 sm:py-6" to="/contact" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">Contact</Link>
             </div>
           </div>
         </nav>
