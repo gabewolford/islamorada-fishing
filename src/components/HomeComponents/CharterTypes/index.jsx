@@ -9,7 +9,7 @@ export default function CharterTypes() {
     return (
         <>
             <div className="mx-6 lg:mx-20 mb-16">
-                    <h1 className="text-2xl font-medium mb-6">Types of charters</h1>
+                    <h2 className="text-2xl font-medium mb-6">Types of charters</h2>
                     <div className="flex flex-col md:flex-row md:grid md:grid-cols-3 md:flex-wrap md:gap-6 items-center self-stretch">
                         <div className="flex items-center md:flex-col self-stretch mb-6 gap-4">
                             <div className="w-2/5 md:w-auto">
