@@ -14,6 +14,12 @@ export default {
           666: '#073050',
           'hover': '#20ADDA'
         },
+        offshore: {
+          420: '#274F9F',
+        },
+        backcountry: {
+          420: '#05AD9D',
+        },
         muted: {
           420: '#999BAF',
         }
