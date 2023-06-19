@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         cyan: {
-          420: '#1989AD',
+          420: '#136F8C',
           69: '#113C5D',
           666: '#073050',
           'hover': '#20ADDA'
