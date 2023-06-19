@@ -1,7 +1,23 @@
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo-header.png'
+import { useLayoutEffect, useState } from 'react';
 
 export default function NavBar() {
+  const [isSmallScreen, setisSmallScreen] = useState(false);
+
+  useLayoutEffect(() => {
+    const handleResize = () => {
+      setisSmallScreen(window.innerWidth <= 704);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <header className="fixed flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 sm:py-0">
@@ -9,7 +25,7 @@ export default function NavBar() {
           
           <div className="flex items-center justify-between">
             <div className='flex'>
-              <Link className="flex-none" to="/" aria-label="Brand">
+              <Link className="flex-none" to="/">
                 <img src={logo} alt='Islamorada Fishing Guides & Charters' className='max-h-[40px]' />
               </Link>
             </div>
@@ -37,7 +53,11 @@ export default function NavBar() {
                   </button>
 
                   <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.5ms] sm:duration-[200ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-50 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5"
-                  data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                  {...(isSmallScreen && {
+                    'data-hs-collapse': '#navbar-collapse-with-animation',
+                    'aria-controls': 'navbar-collapse-with-animation',
+                    'aria-label': 'Toggle navigation'
+                  })}>
                     
                     <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" to="/charters">
                       All Charters
@@ -62,20 +82,37 @@ export default function NavBar() {
                 <Link 
                   className="font-medium hover:text-cyan-420" 
                   to="/guides"
-                  data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                  {...(isSmallScreen && {
+                    'data-hs-collapse': '#navbar-collapse-with-animation',
+                    'aria-controls': 'navbar-collapse-with-animation',
+                    'aria-label': 'Toggle navigation'
+                  })}>
                   Guides
                 </Link>
 
                 <Link 
                   className="font-medium hover:text-cyan-420 sm:py-6" 
                   to="/explore-islamorada"
-                  data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                  {...(isSmallScreen && {
+                    'data-hs-collapse': '#navbar-collapse-with-animation',
+                    'aria-controls': 'navbar-collapse-with-animation',
+                    'aria-label': 'Toggle navigation'
+                  })}>
                   Explore Islamorada
                 </Link>
 
                 {/* <Link className="font-medium  hover:text-cyan-420 sm:py-6" to="/frequently-asked-questions" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">FAQs</Link> */}
 
-                <Link className="font-medium  hover:text-cyan-420 sm:py-6" to="/contact" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">Contact</Link>
+                <Link 
+                  className="font-medium hover:text-cyan-420 sm:py-6" 
+                  to="/contact" 
+                  {...(isSmallScreen && {
+                    'data-hs-collapse': '#navbar-collapse-with-animation',
+                    'aria-controls': 'navbar-collapse-with-animation',
+                    'aria-label': 'Toggle navigation'
+                  })}>
+                  Contact
+                </Link>
             </div>
           </div>
         </nav>
