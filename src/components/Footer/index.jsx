@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import facebookLogo from '../../assets/facebook.png'
 import instagramLogo from '../../assets/instagram.png'
 import waterImage from '../../assets/water.png'
+import logo from '../../assets/logo-footer.png'
 
 export default function Footer() {
     return (
@@ -19,7 +20,9 @@ export default function Footer() {
                 </div>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 p-10 sm:px-6 lg:px-8">
                     <div className="col-span-full lg:col-span-1">
-                        <Link className="flex-none text-xl text-muted-420 font-semibold " to="/" aria-label="Brand">logo</Link>
+                        <Link className="flex-none" to="/" aria-label="Brand">
+                            <img src={logo} alt='Islamorada Fishing Guides & Charters' className='max-w-[200px]'/>
+                        </Link>
                     </div>
                     <div className="grid space-y-3 text-sm">
                         <p><Link className="inline-flex gap-x-2 text-white hover:text-cyan-420" to="/charters">Fishing Charters</Link></p>

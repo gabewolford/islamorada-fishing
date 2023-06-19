@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo-header.png'
 
 export default function NavBar() {
   return (
@@ -7,7 +8,12 @@ export default function NavBar() {
         <nav className="relative w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
           
           <div className="flex items-center justify-between">
-            <Link className="flex-none text-xl font-semibold" to="/" aria-label="Brand">logo</Link>
+            <div className='flex'>
+              <Link className="flex-none" to="/" aria-label="Brand">
+                <img src={logo} alt='Islamorada Fishing Guides & Charters' className='max-h-[40px]'/>
+              </Link>
+            </div>
+            
             <div className="sm:hidden">
               <button type="button" className="hs-collapse-toggle p-0 inline-flex justify-center items-center rounded-md font-medium bg-white align-middle focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-cyan-420 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                 <svg className="hs-collapse-open:hidden w-6 h-6" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
