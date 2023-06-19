@@ -10,7 +10,7 @@ export default function NavBar() {
           <div className="flex items-center justify-between">
             <div className='flex'>
               <Link className="flex-none" to="/" aria-label="Brand">
-                <img src={logo} alt='Islamorada Fishing Guides & Charters' className='max-h-[40px]' data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation"/>
+                <img src={logo} alt='Islamorada Fishing Guides & Charters' className='max-h-[40px]' />
               </Link>
             </div>
             
