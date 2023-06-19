@@ -33,7 +33,7 @@ export default function PhotoRightCard2() {
                     <p className="text-sm md:text-base mb-2">Dolphin (also known as Mahi-mahi or dorado) is an action-packed, colorful fish that is great for both beginners and experienced anglers.  Their colors are amazing with hues of green, blue teal and silver and from head to tail.</p>
                     <p className="text-sm md:text-base mb-2">Schools of dolphin can be found offshore in the Gulfstream waters year-round, but peak in the warmer summer months.</p>
                     <p className="text-sm md:text-base mb-4">In Islamorada, we are known to have many Dolphin tournaments. If you are interested in entering one, let us know and we can help suggest a few.</p>
-                    <p className="text-sm md:text-base font-bold mb-4">Availability: All year</p>
+                    <p className="text-sm md:text-base font-bold mb-4">Availability: May - August</p>
                     <p className="text-xs mb-6">Rates vary depending on the boat and number of people.</p>
                     <Link to="/contact" className="text-white font-medium bg-cyan-420 hover:bg-cyan-hover transition duration-300 ease-in-out rounded-3xl px-5 py-3.5 w-fit">Book A Charter</Link>
                 </div>
