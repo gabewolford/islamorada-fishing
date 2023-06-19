@@ -13,6 +13,7 @@ import GuidesPage from '../Guides/GuidesPage'
 import GuideCard from '../Guides/GuideCard'
 import GuideDetailsPage from '../Guides/GuideDetailsPage'
 import ExplorePage from '../ExplorePage'
+import WhereToStayPage from '../WhereToStayPage'
 import FAQPage from '../FAQPage'
 import ContactPage from '../ContactPage'
 import ContactConfirmationPage from '../ContactConfirmationPage'
@@ -21,9 +22,6 @@ import PartnerCard from '../PartnersComponents/PartnerCard'
 import NotFoundPage from '../NotFoundPage'
 import Footer from '../Footer'
 import ScrollToTop from '../ScrollToTop'
-import lanceKeenePhoto from '../../assets/captains/lance-keene.png'
-import chrisBarronPhoto from '../../assets/captains/chris-barron.png'
-import mikeVeneziaPhoto from '../../assets/captains/mike-venezia.png'
 import bassProPhoto from '../../assets/partners/basspro.png'
 import wwsPhoto from '../../assets/partners/wws-logo.png'
 import amaraCayPhoto from '../../assets/partners/amaracay.png'
@@ -49,6 +47,9 @@ import saltwaterSportsmanPhoto from '../../assets/partners/saltwater-sportsman.p
 import strayCatPhoto from '../../assets/partners/straycat-charters.png'
 import tarponTrustPhoto from '../../assets/partners/tarpontrust.png'
 import upperKeysRotaryPhoto from '../../assets/partners/upper-keys-rotary.png'
+import lanceKeenePhoto from '../../assets/captains/lance-keene.png'
+import chrisBarronPhoto from '../../assets/captains/chris-barron.png'
+import mikeVeneziaPhoto from '../../assets/captains/mike-venezia.png'
 import alexAdlerPhoto from '../../assets/captains/alex-adler.png'
 import masonBakerPhoto from '../../assets/captains/mason-baker.png'
 import richBursonPhoto from '../../assets/captains/rich-burson.png'
@@ -522,6 +523,7 @@ function App() {
             <Route path="/guides" element={<GuidesPage guidesList={guidesList} />} />
             <Route path="/guides/:slug" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} guides={guides}/>}  />
             <Route path="/explore-islamorada" element={<ExplorePage />} />
+            <Route path="/explore-islamorada/stay" element={<WhereToStayPage />} />
             <Route path="/frequently-asked-questions" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/contact/confirmation" element={<ContactConfirmationPage />} />
