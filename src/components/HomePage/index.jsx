@@ -9,7 +9,7 @@ import 'animate.css';
 export default function HomePage() {
     return (
         <>
-            <div className="mx-auto max-w-7xl pt-8 md:pt-24 animate__animated animate__fadeIn">
+            <div className="mx-auto max-w-7xl pt-4 md:pt-24 animate__animated animate__fadeIn">
                 <Helmet>
                     <title>Islamorada Fishing Guides & Charters | Florida Keys</title>
                 </Helmet>
