@@ -14,6 +14,7 @@ import GuideCard from '../Guides/GuideCard'
 import GuideDetailsPage from '../Guides/GuideDetailsPage'
 import ExplorePage from '../ExplorePage'
 import WhereToStayPage from '../WhereToStayPage'
+import ResortCard from '../WhereToStayComponents/ResortCard'
 import FAQPage from '../FAQPage'
 import ContactPage from '../ContactPage'
 import ContactConfirmationPage from '../ContactConfirmationPage'
@@ -66,11 +67,25 @@ import steveLavoiePhoto from '../../assets/captains/steve-lavoie.png'
 import richMitchellPhoto from '../../assets/captains/rich-mitchell.png'
 import drewNobregasPhoto from '../../assets/captains/drew-nobregas.png'
 import ryanWentzelPhoto from '../../assets/captains/ryan-wentzel.png'
+import amaraCayMainPhoto from '../../assets/resorts/amara-cay-main.png'
+import amaraCayLogo from '../../assets/resorts/amara-cay-logo.png'
+import cheecaLodgeMainPhoto from '../../assets/resorts/cheeca-lodge-main.png'
+import cheecaLodgeLogo from '../../assets/resorts/cheeca-lodge-logo.png'
+import playaLargoMainPhoto from '../../assets/resorts/playa-largo-main.png'
+import playLargoLogo from '../../assets/resorts/playa-largo-logo.png'
+import fisherInnMainPhoto from '../../assets/resorts/fisher-inn-main.png'
+import fisherInnLogo from '../../assets/resorts/fisher-inn-logo.png'
+import islandsIslamoradaMainPhoto from '../../assets/resorts/islands-islamorada-main.png'
+import islandsIslamoradaLogo from '../../assets/resorts/islands-islamorada-logo.png'
+import casaMoradaMainPhoto from '../../assets/resorts/casa-morada-main.png'
+import casaMoradaLogo from '../../assets/resorts/casa-morada-logo.png'
+
 
 
 function App() {
   const [guides, setGuides] = useState([])
   const [partners, setPartners] = useState([])
+  const [resorts, setResorts] = useState([])
   const [detailPage, setDetailPage] = useState()
 
   const allGuides = [
@@ -470,9 +485,55 @@ function App() {
     },
   ]
 
+  const allResorts = [
+    {
+      name: 'Amara Cay',
+      blurb: 'Amara Cay Resort is anchored in the laid-back style and carefree atmosphere that makes Islamorada the Sport Fishing Capital of the World.',
+      main_photo: amaraCayMainPhoto,
+      logo: amaraCayLogo,
+      url: 'https://www.islamoradaresortcollection.com/amara-cay-resort',
+    },
+    {
+      name: 'Cheeca Lodge',
+      blurb: 'Cheeca Lodge & Spa has been an exclusive hideaway for celebrities, business leaders and U.S. Presidents for over 70 years.',
+      main_photo: cheecaLodgeMainPhoto,
+      logo: cheecaLodgeLogo,
+      url: 'https://www.cheeca.com/',
+    },
+    {
+      name: 'Playa Largo',
+      blurb: 'Located in Key Largo, FL, Playa Largo Resort & Spa, Autograph Collection offers 178 luxury rooms, suites, bungalows, and a beach house.',
+      main_photo: playaLargoMainPhoto,
+      logo: playLargoLogo,
+      url: 'https://www.playalargoresort.com/',
+    },
+    {
+      name: 'Fisher Inn',
+      blurb: 'The Fisher Inn Resort & Marina offers guests a modern, stylish, and comfortable place to stay while visiting Islamorada.',
+      main_photo: fisherInnMainPhoto,
+      logo: fisherInnLogo,
+      url: 'https://www.fisherinnresort.com/',
+    },
+    {
+      name: 'The Islands of Islamorada',
+      blurb: 'Seamlessly weaves the allure of tropical beauty with familiar luxurious comforts, creating a captivating experience for the whole family.',
+      main_photo: islandsIslamoradaMainPhoto,
+      logo: islandsIslamoradaLogo,
+      url: 'https://www.theislandsofislamorada.com/',
+    },
+    {
+      name: 'Casa Morada',
+      blurb: 'Casa Morada is an upscale sixteen suite privately owned hotel inspired by the informal character of the Caribbean.',
+      main_photo: casaMoradaMainPhoto,
+      logo: casaMoradaLogo,
+      url: 'https://casamorada.com/',
+    },
+  ]
+
   useEffect(() => {
     setGuides(allGuides)
     setPartners(allPartners)
+    setResorts(allResorts)
     const cards = document.querySelectorAll('.fade-in')
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -504,6 +565,12 @@ function App() {
       .map((partner, i) => <PartnerCard key={i} partnerData={partner} />)
   }
 
+  let resortsList
+  if (allResorts.length > 0) {
+    resortsList = resorts
+      .map((resort, i) => <ResortCard key={i} resortData={resort} />)
+  }
+
   return (
     <>
         <Helmet>
@@ -523,7 +590,7 @@ function App() {
             <Route path="/guides" element={<GuidesPage guidesList={guidesList} />} />
             <Route path="/guides/:slug" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} guides={guides}/>}  />
             <Route path="/explore-islamorada" element={<ExplorePage />} />
-            <Route path="/explore-islamorada/stay" element={<WhereToStayPage />} />
+            <Route path="/explore-islamorada/stay" element={<WhereToStayPage resortsList={resortsList} />} />
             <Route path="/frequently-asked-questions" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/contact/confirmation" element={<ContactConfirmationPage />} />
