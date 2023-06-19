@@ -1,6 +1,7 @@
 import Header from "../../CharterComponents/OffshorePage/Header"
 import PhotoLeftCard1 from "../../CharterComponents/OffshorePage/PhotoLeftCard1"
 import PhotoRightCard2 from "../../CharterComponents/OffshorePage/PhotoRightCard2"
+import PhotoLeftCard3 from "../../CharterComponents/OffshorePage/PhotoLeftCard3"
 import { Helmet } from "react-helmet"
 import 'animate.css'
 import { useEffect } from "react"
@@ -38,6 +39,7 @@ export default function OffshoreChartersPage() {
                     <Header />
                     <PhotoLeftCard1 />
                     <PhotoRightCard2 />
+                    <PhotoLeftCard3 />
                 </div>
             </div>
         </>
