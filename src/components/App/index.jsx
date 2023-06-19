@@ -511,7 +511,6 @@ function App() {
         </Helmet>
         <ScrollToTop />
         <Nav />
-        <PartnerCard/>
         <Footer />
         
         <Routes>

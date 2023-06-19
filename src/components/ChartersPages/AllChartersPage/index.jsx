@@ -32,7 +32,7 @@ export default function AllChartersPage() {
 
     return (
         <>
-            <div className="mx-auto max-w-7xl pt-4 md:pt-24 animate__animated animate__fadeIn">
+            <div className="mx-auto max-w-7xl pt-16 md:pt-24 pb-12 md:pb-0 animate__animated animate__fadeIn">
                 <div className="mx-6 lg:mx-20 mb-0 md:mb-8">
                     <Helmet>
                         <title>Islamorada Fishing | All Charters</title>

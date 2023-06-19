@@ -5,7 +5,7 @@ import 'animate.css'
 export default function ContactConfirmationPage() {
     return (
         <>
-            <div className="mx-auto max-w-7xl pt-4 md:pt-24">
+            <div className="mx-auto max-w-7xl pt-16 md:pt-24 pb-12 md:pb-0">
                 <div className="mx-6 lg:mx-20 mb-0 md:mb-8">
                     <Helmet>
                         <title>Islamorada Fishing | Contact Us</title>

@@ -10,7 +10,7 @@ export default function ExplorePage() {
 
     return (
         <>
-            <div className="mx-auto max-w-7xl pt-4 md:pt-24 animate__animated animate__fadeIn">
+            <div className="mx-auto max-w-7xl pt-16 md:pt-24 animate__animated animate__fadeIn">
                 <div className="mx-6 lg:mx-20 mb-16">
                     <Helmet>
                         <title>Islamorada Fishing | Explore Islamorada</title>
