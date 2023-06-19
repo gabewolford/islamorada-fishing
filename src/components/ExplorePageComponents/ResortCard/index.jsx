@@ -16,7 +16,7 @@ export default function ResortCard({ resortData }) {
                 rel="noreferrer"
                 className="hover-grow"
             >
-                <div className="flex flex-col items-start gap-6 relative">
+                <div className="fade-in flex flex-col items-start gap-6 relative">
                     <img src={resortPhoto} alt={resortData.name} />
                     <img className='absolute top-0 left-0 w-1/3 h-auto pt-5 pl-5' src={resortLogo} alt={resortData.name} />
                     <div className="flex flex-col items-start">

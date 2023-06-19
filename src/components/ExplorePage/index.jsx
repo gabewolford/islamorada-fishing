@@ -1,12 +1,10 @@
 import Header from "../ExplorePageComponents/Header"
 import { Helmet } from "react-helmet"
 import PhotoLeftCard1 from "../ExplorePageComponents/PhotoLeftCard1"
-import PhotoRightCard2 from "../ExplorePageComponents/PhotoRightCard2"
-import PhotoLeftCard3 from "../ExplorePageComponents/PhotoLeftCard3"
 import 'animate.css'
 
 
-export default function ExplorePage() {
+export default function ExplorePage({ resortsList }) {
 
     return (
         <>
@@ -17,8 +15,10 @@ export default function ExplorePage() {
                     </Helmet>
                     <Header />
                     <PhotoLeftCard1 />
-                    <PhotoRightCard2 />
-                    <PhotoLeftCard3 />
+                    <h3 className="text-2xl md:text-3xl font-semibold mb-8">Where to stay</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-10 md:gap-y-16 justify-center">
+                        {resortsList}
+                    </div>
                 </div>
             </div> 
         </>

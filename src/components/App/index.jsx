@@ -13,8 +13,7 @@ import GuidesPage from '../Guides/GuidesPage'
 import GuideCard from '../Guides/GuideCard'
 import GuideDetailsPage from '../Guides/GuideDetailsPage'
 import ExplorePage from '../ExplorePage'
-import WhereToStayPage from '../WhereToStayPage'
-import ResortCard from '../WhereToStayComponents/ResortCard'
+import ResortCard from '../ExplorePageComponents/ResortCard'
 import FAQPage from '../FAQPage'
 import ContactPage from '../ContactPage'
 import ContactConfirmationPage from '../ContactConfirmationPage'
@@ -589,8 +588,7 @@ function App() {
             <Route path="/charters/eco-enviro-tours" element={<EcoEnviroToursPage />} />
             <Route path="/guides" element={<GuidesPage guidesList={guidesList} />} />
             <Route path="/guides/:slug" element={<GuideDetailsPage guideData={detailPage} setDetailPage={setDetailPage} guides={guides}/>}  />
-            <Route path="/explore-islamorada" element={<ExplorePage />} />
-            <Route path="/explore-islamorada/stay" element={<WhereToStayPage resortsList={resortsList} />} />
+            <Route path="/explore-islamorada" element={<ExplorePage resortsList={resortsList}/>} />
             <Route path="/frequently-asked-questions" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/contact/confirmation" element={<ContactConfirmationPage />} />
