@@ -101,7 +101,16 @@ export default function NavBar() {
                   Explore Islamorada
                 </Link>
 
-                {/* <Link className="font-medium  hover:text-cyan-420 sm:py-6" to="/frequently-asked-questions" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">FAQs</Link> */}
+                {/* <Link 
+                  className="font-medium hover:text-cyan-420 sm:py-6" 
+                  to="/frequently-asked-questions"
+                  {...(isSmallScreen && {
+                    'data-hs-collapse': '#navbar-collapse-with-animation',
+                    'aria-controls': 'navbar-collapse-with-animation',
+                    'aria-label': 'Toggle navigation'
+                  })}>
+                  FAQs
+                </Link> */}
 
                 <Link 
                   className="font-medium hover:text-cyan-420 sm:py-6" 
