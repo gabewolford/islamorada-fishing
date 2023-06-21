@@ -33,7 +33,7 @@ export default function PartnersSection() {
     return (
         <>
             <div className="fade-in flex flex-col items-center mx-6 lg:mx-20 gap-6 pb-10 md:pb-6">
-                <h3 className="text-2xl lg:text-3xl font-medium mb-2">Featured partners</h3>
+                <h3 className="text-2xl lg:text-3xl medium mb-2">Featured partners</h3>
                 <div className="flex flex-row justify-center gap-12">
                     <div className="w-1/3 md:w-1/6 lg:w-{1/7}">
                         <img src={bassproImage} className="w-full h-full" alt="Bass Pro Shops" />
@@ -58,7 +58,7 @@ export default function PartnersSection() {
                     </div>
                 </div>
                 <div>
-                    <Link to="/partners" className="text-cyan-420 hover:text-cyan-hover transition duration-100 ease-in-out text-base font-medium">View All</Link>
+                    <Link to="/partners" className="text-cyan-420 hover:text-cyan-hover transition duration-100 ease-in-out text-base medium">View All</Link>
                 </div>
             </div>
         </>
