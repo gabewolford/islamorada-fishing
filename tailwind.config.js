@@ -22,8 +22,10 @@ export default {
         },
         muted: {
           420: '#999BAF',
-        }
-
+        },
+        navgrey: {
+          420: '#536879',
+        },
       }
     },
   },

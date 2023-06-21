@@ -1,9 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo-header.png'
 import { useLayoutEffect, useState } from 'react';
 
 export default function NavBar() {
   const [isSmallScreen, setisSmallScreen] = useState(false);
+  
+  const location = useLocation();
+  console.log(location)
+  const inactiveColorClass = 'text-navgrey-420';
 
   useLayoutEffect(() => {
     const handleResize = () => {
@@ -45,7 +49,7 @@ export default function NavBar() {
           <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
-                  <button type="button" className="flex items-center w-full  hover:text-cyan-420 medium">
+                  <button type="button" className={`flex items-center w-full  hover:text-cyan-420 medium ${(location.pathname !== '/charters' && location.pathname !== '/') && inactiveColorClass}`}>
                     Charters
                     <svg className="ml-2 w-2.5 h-2.5 " width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
@@ -59,28 +63,31 @@ export default function NavBar() {
                     'aria-label': 'Toggle navigation'
                   })}>
                     
-                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" to="/charters">
+                    <Link 
+                      className={`flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420 ${location.pathname === '/charters' && 'bold'}`}
+                      to="/charters" >
                       All Charters
                     </Link>
 
-                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" to="/charters/inshore-backcountry">
+                    <Link className={`flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" ${location.pathname === '/charters/inshore-backcountry' && 'bold'}`} 
+                      to="/charters/inshore-backcountry">
                       Backcountry & Inshore
                     </Link>
 
                     <Link 
-                      className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" 
+                      className={`flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420 ${location.pathname === '/charters/offshore' && 'bold'}`} 
                       to="/charters/offshore">
                       Reef & Offshore
                     </Link>
                     
-                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420" to="/charters/eco-enviro-tours">
+                    <Link className={`flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 hover:text-cyan-420 focus:ring-2 focus:ring-cyan-420 ${location.pathname === '/charters/eco-enviro-tours' && 'bold'}`} to="/charters/eco-enviro-tours">
                       Eco & Enviro Tours
                     </Link>
 
                   </div>
                 </div>
                 <Link 
-                  className="medium hover:text-cyan-420" 
+                  className={`medium hover:text-cyan-420 ${(location.pathname !== '/guides' && location.pathname !== '/') && inactiveColorClass}`}
                   to="/guides"
                   {...(isSmallScreen && {
                     'data-hs-collapse': '#navbar-collapse-with-animation',
@@ -91,7 +98,7 @@ export default function NavBar() {
                 </Link>
 
                 <Link 
-                  className="medium hover:text-cyan-420 sm:py-6" 
+                  className={`medium hover:text-cyan-420 sm:py-6 ${(location.pathname !== '/explore-islamorada' && location.pathname !== '/') && inactiveColorClass}`}
                   to="/explore-islamorada"
                   {...(isSmallScreen && {
                     'data-hs-collapse': '#navbar-collapse-with-animation',
@@ -113,7 +120,7 @@ export default function NavBar() {
                 </Link> */}
 
                 <Link 
-                  className="medium hover:text-cyan-420 sm:py-6" 
+                  className={`medium hover:text-cyan-420 sm:py-6 ${(location.pathname !== '/contact' && location.pathname !== '/') && inactiveColorClass}`}
                   to="/contact" 
                   {...(isSmallScreen && {
                     'data-hs-collapse': '#navbar-collapse-with-animation',
