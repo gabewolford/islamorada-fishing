@@ -2,11 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+* Web Fonts from colophon-foundry.org
+*
+* The fonts included in this stylesheet are subject to the End User License you purchased
+* from Colophon Foundry. The fonts are protected under domestic and international trademark and
+* copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+* distributing this font software.
+*
+* (c) 2023 Colophon Foundry
+*
+* Licensed to Alexandra Barron, Small Hound
+*/
+
+
+@font-face {
+    font-family: 'apercu-bold-pro';
+    src: url('/fonts/apercu-bold-pro.woff2') format('woff2'),
+        url('/fonts/apercu-bold-pro.woff') format('woff'),
+        url('/fonts/apercu-bold-pro.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'apercu-medium-pro';
+    src: url('/fonts/apercu-medium-pro.woff2') format('woff2'),
+        url('/fonts/apercu-medium-pro.woff') format('woff'),
+        url('/fonts/apercu-medium-pro.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'apercu-regular-pro';
+    src: url('/fonts/apercu-regular-pro.woff2') format('woff2'),
+        url('/fonts/apercu-regular-pro.woff') format('woff'),
+        url('/fonts/apercu-regular-pro.ttf') format('truetype');
+    font-weight: 400;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #073050;
+    font-family: 'apercu-regular-pro';
+    font-display: swap;
+}
+
+.bold {
+    font-family: 'apercu-regular-pro';
+}
+
+.medium {
+    font-family: 'apercu-medium-pro';
 }
 
 body {
