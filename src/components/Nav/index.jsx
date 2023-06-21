@@ -31,7 +31,7 @@ export default function NavBar() {
             </div>
             
             <div className="sm:hidden">
-              <button type="button" className="hs-collapse-toggle p-0 inline-flex justify-center items-center rounded-md font-medium bg-white align-middle focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-cyan-420 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+              <button type="button" className="hs-collapse-toggle p-0 inline-flex justify-center items-center rounded-md medium bg-white align-middle focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-cyan-420 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                 <svg className="hs-collapse-open:hidden w-6 h-6" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
                   <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                 </svg>
@@ -45,7 +45,7 @@ export default function NavBar() {
           <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
-                  <button type="button" className="flex items-center w-full  hover:text-cyan-420 font-medium">
+                  <button type="button" className="flex items-center w-full  hover:text-cyan-420 medium">
                     Charters
                     <svg className="ml-2 w-2.5 h-2.5 " width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
@@ -80,7 +80,7 @@ export default function NavBar() {
                   </div>
                 </div>
                 <Link 
-                  className="font-medium hover:text-cyan-420" 
+                  className="medium hover:text-cyan-420" 
                   to="/guides"
                   {...(isSmallScreen && {
                     'data-hs-collapse': '#navbar-collapse-with-animation',
@@ -91,7 +91,7 @@ export default function NavBar() {
                 </Link>
 
                 <Link 
-                  className="font-medium hover:text-cyan-420 sm:py-6" 
+                  className="medium hover:text-cyan-420 sm:py-6" 
                   to="/explore-islamorada"
                   {...(isSmallScreen && {
                     'data-hs-collapse': '#navbar-collapse-with-animation',
@@ -102,7 +102,7 @@ export default function NavBar() {
                 </Link>
 
                 {/* <Link 
-                  className="font-medium hover:text-cyan-420 sm:py-6" 
+                  className="medium hover:text-cyan-420 sm:py-6" 
                   to="/frequently-asked-questions"
                   {...(isSmallScreen && {
                     'data-hs-collapse': '#navbar-collapse-with-animation',
@@ -113,7 +113,7 @@ export default function NavBar() {
                 </Link> */}
 
                 <Link 
-                  className="font-medium hover:text-cyan-420 sm:py-6" 
+                  className="medium hover:text-cyan-420 sm:py-6" 
                   to="/contact" 
                   {...(isSmallScreen && {
                     'data-hs-collapse': '#navbar-collapse-with-animation',
