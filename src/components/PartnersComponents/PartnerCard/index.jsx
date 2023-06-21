@@ -1,7 +1,7 @@
 export default function PartnerCard({ partnerData }) {
     let partnerName, partnerPhoto, partnerURL
     if (partnerData) {
-        partnerName = <h3 className="text-sm text-center font-bold mt-2">{partnerData.name}</h3>
+        partnerName = <h3 className="text-sm text-center bold mt-2">{partnerData.name}</h3>
         partnerPhoto = '../' + partnerData.image
         partnerURL = partnerData.url
     }
