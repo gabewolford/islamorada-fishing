@@ -1,7 +1,7 @@
 export default function ResortCard({ resortData }) {
     let resortName, resortPhoto, resortURL, resortBlurb, resortLogo
     if (resortData) {
-        resortName = <h3 className="font-semibold">{resortData.name}</h3>
+        resortName = <h3 className="bold">{resortData.name}</h3>
         resortBlurb = <p>{resortData.blurb}</p>
         resortPhoto = '../' + resortData.main_photo 
         resortURL = resortData.url
