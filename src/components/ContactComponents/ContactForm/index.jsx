@@ -23,7 +23,7 @@ export default function ContactForm() {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm("service_9ltrzde","contact_form", form.current, 'GLjJJKxGwW-an5Tep')
+        emailjs.sendForm("service_2ctwozo","contact_form", form.current, 'GLjJJKxGwW-an5Tep')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
