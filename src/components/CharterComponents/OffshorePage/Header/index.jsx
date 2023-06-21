@@ -5,7 +5,7 @@ export default function Header() {
         <>
             <div className="flex flex-col items-start gap-3 mb-8 md:mb-16">
                 <p className="text-sm"><Link to="/" className="hover:text-cyan-hover">Home</Link> / <Link to="/charters" className="hover:text-cyan-hover">Charters</Link> / Reef & Offshore</p>
-                <h1 className="text-3xl lg:text-5xl font-medium">Reef & Offshore Charter Packages</h1>
+                <h1 className="text-3xl lg:text-5xl bold">Reef & Offshore Charter Packages</h1>
             </div>
         </>
     )
