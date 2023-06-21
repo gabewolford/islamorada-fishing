@@ -6,7 +6,6 @@ export default function NavBar() {
   const [isSmallScreen, setisSmallScreen] = useState(false);
   
   const location = useLocation();
-  console.log(location)
   const inactiveColorClass = 'text-navgrey-420';
 
   useLayoutEffect(() => {
