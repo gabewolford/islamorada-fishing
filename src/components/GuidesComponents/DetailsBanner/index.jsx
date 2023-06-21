@@ -21,8 +21,8 @@ export default function DetailsBanner({ guideData }) {
                 <p className="text-sm"><Link to="/" className="hover:text-cyan-hover">Home</Link> / <Link to="/guides" className="hover:text-cyan-hover">Guides</Link> / {captainName}</p>
             </div>
             <div className="text-center mb-8">
-                {guideType && <h4 className="font-bold mb-3">{guideType}</h4>}
-                <h1 className="text-3xl lg:text-5xl font-bold mb-3">Capt. {captainName}</h1>
+                {guideType && <h4 className="bold mb-3">{guideType}</h4>}
+                <h1 className="text-3xl lg:text-5xl bold mb-3">Capt. {captainName}</h1>
                 {businessName && <h5>of {businessName}</h5>}
             </div>
         </>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function GuideCard({ guideData, setDetailPage }) {
     let guideName, guidePhoto, badges
     if (guideData) {
-        guideName = <h3 className="text-md mt-2 text-center font-bold">Capt. {guideData.name}</h3>
+        guideName = <h3 className="text-md mt-2 text-center bold">Capt. {guideData.name}</h3>
         guidePhoto = '..' + guideData.featured_pic
         if (guideData.backcountry === true && guideData.offshore === true) {
             badges = <h5 className="text-center">
