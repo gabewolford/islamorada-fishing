@@ -79,6 +79,7 @@ import islandsIslamoradaMainPhoto from '../../assets/resorts/islands-islamorada-
 import islandsIslamoradaLogo from '../../assets/resorts/islands-islamorada-logo.png'
 import casaMoradaMainPhoto from '../../assets/resorts/casa-morada-main.png'
 import casaMoradaLogo from '../../assets/resorts/casa-morada-logo.png'
+import tanFavicon from '../../assets/tan-favicon.png'
 
 
 
@@ -575,6 +576,7 @@ function App() {
     <>
         <Analytics />
         <Helmet>
+            <link rel="icon" href={tanFavicon} />
             <meta name="description" content='Experience the ultimate fishing adventure in Islamorada, Florida Keys, with the Guides and Charters of World Wide Sportsman.'/>
             <meta name="keywords" content='Fishing Guides, Fishing, Pro Fishing Guide, Fishing Charter, Florida Keys, Islamorada, Inshore Backcountry, Offshore, Sunset Tarpon, Flats Bonefish, Everglades Eco, Enviro Tours'/>
         </Helmet>
