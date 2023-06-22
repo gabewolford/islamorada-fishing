@@ -45,7 +45,7 @@ export default function ContactForm() {
                     <input 
                         type="text"
                         name="user_name" 
-                        className="border-b-2 border-cyan-666 p-1 w-full"
+                        className="border-b-2 border-cyan-666 rounded-none p-1 w-full"
                         required
                     />
                 </div>
@@ -55,7 +55,7 @@ export default function ContactForm() {
                     <input 
                         type="email"
                         name="user_email"
-                        className="border-b-2 border-cyan-666 p-1 w-full"
+                        className="border-b-2 border-cyan-666 rounded-none p-1 w-full"
                         required
                     />
                 </div>
@@ -66,7 +66,7 @@ export default function ContactForm() {
                         type="tel" 
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                         name="user_phone"
-                        className="border-b-2 border-cyan-666 p-1 w-full"
+                        className="border-b-2 border-cyan-666 rounded-none p-1 w-full"
                         placeholder="XXX-XXX-XXXX"
                         required
                     />
@@ -77,7 +77,7 @@ export default function ContactForm() {
                     <input 
                         type="date" 
                         name="trip_date"
-                        className="border-b-2 border-cyan-666 p-1 w-full"
+                        className="border-b-2 border-cyan-666 rounded-none p-1 w-full"
                         min={formattedDate}
                     />
                 </div>
@@ -86,7 +86,7 @@ export default function ContactForm() {
                     <label className="text-xs">Trip Type <span>*</span></label><br/>
                     <select 
                         name="trip_type" 
-                        className="border-b-2 border-cyan-666 p-1 w-full"
+                        className="border-b-2 border-cyan-666 rounded-none p-1 w-full"
                         required>
                             <option value="Not Selected">Select One</option>
                             <option value="Backcountry">Backcountry & Inshore</option>
@@ -101,7 +101,7 @@ export default function ContactForm() {
                     <label className="text-xs">Group Size <span>*</span></label>
                     <select 
                         name="group_size" 
-                        className="border-b-2 border-cyan-666 p-1 w-full"
+                        className="border-b-2 border-cyan-666 rounded-none p-1 w-full"
                         >
                             <option value="Not Selected">Select One</option>
                             <option value="1">1</option>
@@ -121,7 +121,7 @@ export default function ContactForm() {
                     <label className="text-xs">Message <span>*</span></label>
                     <textarea 
                         name="user_message" 
-                        className="border-2 rounded-md border-cyan-666 p-1 min-h-[150px] h-max w-full mt-1"
+                        className="border-2 rounded-md border-cyan-666 rounded-none p-1 min-h-[150px] h-max w-full mt-1"
                         maxLength={500}
                         placeholder="Your message here"
                         required
