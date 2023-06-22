@@ -7,6 +7,7 @@ export default function NavBar() {
   
   const location = useLocation();
   const inactiveColorClass = 'text-navgrey-420';
+  const excludedPaths = ['/', '/charters', '/charters/inshore-backcountry', '/charters/offshore', '/charters/eco-enviro-tours'];
 
   useLayoutEffect(() => {
     const handleResize = () => {
@@ -48,7 +49,9 @@ export default function NavBar() {
           <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
             <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
               <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
-                  <button type="button" className={`flex items-center w-full  hover:text-cyan-420 medium ${(location.pathname !== '/charters' && location.pathname !== '/') && inactiveColorClass}`}>
+                  <button type="button" className={`flex items-center w-full  hover:text-cyan-420 medium 
+                  ${!excludedPaths.includes(location.pathname) && inactiveColorClass}`}
+                  >
                     Charters
                     <svg className="ml-2 w-2.5 h-2.5 " width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
