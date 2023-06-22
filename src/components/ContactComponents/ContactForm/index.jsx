@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import PhoneInput from "../PhoneInput";
 import emailjs from "@emailjs/browser";
 
 export default function ContactForm() { 
@@ -60,17 +61,7 @@ export default function ContactForm() {
                     />
                 </div>
 
-                <div className="col-span-2 md:col-span-1">
-                    <label className="text-xs">Phone <span>*</span></label>
-                    <input 
-                        type="tel" 
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        name="user_phone"
-                        className="border-b-2 border-cyan-666 rounded-none p-1 w-full"
-                        placeholder="XXX-XXX-XXXX"
-                        required
-                    />
-                </div>
+                <PhoneInput />
 
                 <div className="col-span-2 md:col-span-1">
                     <label className="text-xs">Trip Date</label><br/>
