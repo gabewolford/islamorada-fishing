@@ -24,7 +24,8 @@
         url('/fonts/apercu-bold-pro.woff') format('woff'),
         url('/fonts/apercu-bold-pro.ttf') format('truetype');
     font-weight: 700;
-    font-display: swap;
+    font-display: block;
+    font-style: normal;
 }
 @font-face {
     font-family: 'apercu-medium-pro';
@@ -32,7 +33,8 @@
         url('/fonts/apercu-medium-pro.woff') format('woff'),
         url('/fonts/apercu-medium-pro.ttf') format('truetype');
     font-weight: 500;
-    font-display: swap;
+    font-display: block;
+    font-style: normal;
 }
 @font-face {
     font-family: 'apercu-regular-pro';
@@ -40,7 +42,8 @@
         url('/fonts/apercu-regular-pro.woff') format('woff'),
         url('/fonts/apercu-regular-pro.ttf') format('truetype');
     font-weight: 400;
-    font-display: swap;
+    font-display: block;
+    font-style: normal;
 }
 
 
@@ -50,17 +53,17 @@
     box-sizing: border-box;
     color: #073050;
     font-family: 'apercu-regular-pro', 'Inter', sans-serif;;
-    font-display: swap;
+    font-display: block;
 }
 
 .bold {
     font-family: 'apercu-bold-pro', 'Inter', sans-serif;;
-    font-display: swap;
+    font-display: block;
 }
 
 .medium {
     font-family: 'apercu-medium-pro', 'Inter', sans-serif;;
-    font-display: swap;
+    font-display: block;
 }
 
 body {
