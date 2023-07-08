@@ -36,25 +36,25 @@ export default function PartnersSection() {
                 <h3 className="text-2xl lg:text-3xl medium mb-2">Featured partners</h3>
                 <div className="flex flex-row justify-center gap-12">
                     <div className="w-1/3 md:w-1/6 lg:w-{1/7}">
-                        <img src={bassproImage} className="w-full h-full" alt="Bass Pro Shops" />
+                        <img src={bassproImage} className="w-full h-full" alt="Bass Pro Shops" loading="lazy" />
                     </div>
                     <div className="w-1/3 md:w-1/6 lg:w-{1/7}">
-                        <img src={grassyflatsImage} className="w-full h-full" alt="Grassy Flats" />
+                        <img src={grassyflatsImage} className="w-full h-full" alt="Grassy Flats" loading="lazy" />
                     </div>
                     <div className="w-1/3 md:w-1/6 lg:w-{1/7}">
-                        <img src={amaracayImage} className="w-full h-full" alt="Amara Cay Resort" />
+                        <img src={amaracayImage} className="w-full h-full" alt="Amara Cay Resort" loading="lazy" />
                     </div>
                     <div className="hidden md:inline-block md:w-1/6 lg:w-{1/7}">
-                        <img src={tarpontrustImage} className="w-full h-full" alt="Bonefish & Tarpon Trust" />
+                        <img src={tarpontrustImage} className="w-full h-full" alt="Bonefish & Tarpon Trust" loading="lazy" />
                     </div>
                     <div className="hidden md:inline-block md:w-1/6 lg:w-{1/7}">
-                        <img src={evergladescoalitionImage} className="w-full h-full" alt="Everglades Coalition" />
+                        <img src={evergladescoalitionImage} className="w-full h-full" alt="Everglades Coalition" loading="lazy" />
                     </div>
                     <div className="hidden lg:inline-block md:w-1/6 lg:w-{1/7}">
-                        <img src={charterboatassocImage} className="w-full h-full" alt="Islamorada Charter Boat Association" />
+                        <img src={charterboatassocImage} className="w-full h-full" alt="Islamorada Charter Boat Association" loading="lazy"  />
                     </div>
                     <div className="hidden lg:inline-block md:w-1/6 lg:w-{1/7}">
-                        <img src={keysfishingguidesImage} className="w-full h-full" alt="Florida Keys Fishing Guides Association" />
+                        <img src={keysfishingguidesImage} className="w-full h-full" alt="Florida Keys Fishing Guides Association" loading="lazy" />
                     </div>
                 </div>
                 <div>
